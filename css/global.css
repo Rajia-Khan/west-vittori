@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 
+/* ================================
+   GLOBAL COLOR TOKENS
+================================ */
+:root {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-tertiary: #4cc0cd;
+  --color-quaternary: #ffbd98;
+}
+
+/* ================================
+   FONT UTILITIES
+================================ */
 .font-outfit {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -12,6 +25,9 @@
   font-style: normal;
 }
 
+/* ================================
+   FONT WEIGHTS
+================================ */
 .fw-100 {
   font-weight: 100;
 }
@@ -40,30 +56,149 @@
   font-weight: 900;
 }
 
+/* ================================
+   COLOR UTILITIES
+================================ */
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.text-tertiary {
+  color: var(--color-tertiary);
+}
+.text-quaternary {
+  color: var(--color-quaternary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+.bg-quaternary {
+  background-color: var(--color-quaternary);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+.border-tertiary {
+  border-color: var(--color-tertiary);
+}
+
+/* ================================
+   ACTIVE CATEGORY INDICATOR
+================================ */
 .active-category::after {
   content: "";
   display: block;
   width: 100%;
   height: 2px;
-  background: black;
+  background: var(--color-primary);
   margin-top: 4px;
 }
 
+/* ================================
+   SWIPER GLOBAL STYLES
+================================ */
 .swiper-slide img {
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
+/* ================================
+   PEOPLE SWIPER
+================================ */
 .peopleSwiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: #ffb38e; 
+  background: var(--color-quaternary);
   opacity: 0.5;
   margin: 0 6px !important;
 }
+
 .peopleSwiper .swiper-pagination-bullet-active {
-  background: #4cc0cd; 
+  background: var(--color-tertiary);
   opacity: 1;
   width: 14px;
   height: 14px;
+}
+
+/* ================================
+   TESTIMONIAL SWIPER
+================================ */
+.testimonialSwiper {
+  padding-top: 40px !important;
+}
+
+/* Slide animation */
+.testimonialSwiper .swiper-slide {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0.85) translateY(0);
+  opacity: 0.5;
+}
+
+.testimonialSwiper .swiper-slide-active {
+  transform: scale(1) translateY(-30px);
+  opacity: 1;
+}
+
+/* Pagination */
+.testimonialSwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--color-quaternary) !important;
+  opacity: 1;
+  margin: 0 5px !important;
+  transition: all 0.3s ease;
+}
+
+.testimonialSwiper .swiper-pagination-bullet-active {
+  background: var(--color-tertiary) !important;
+  transform: scale(1.3);
+}
+
+/* ================================
+   TESTIMONIAL CARD
+================================ */
+.testimonial-card {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ================================
+   CATEGORY SLIDER (mySwiper)
+================================ */
+.mySwiper .swiper-wrapper {
+  align-items: flex-end;
+}
+.mySwiper .swiper-slide {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  opacity: 0.85;
+}
+.mySwiper .swiper-slide-active {
+  transform: translateY(-26px);
+  opacity: 1;
+}
+.category-title {
+  color: var(--color-primary);
+  opacity: 0.75;
+  transition: opacity 0.25s ease;
+}
+.category-title.is-active {
+  opacity: 1;
+}
+.category-title.is-active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-primary);
+  margin-top: 6px;
 }

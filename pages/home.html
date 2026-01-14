@@ -17,28 +17,65 @@
     <!-- Header start -->
     <header class="w-full">
       <div
-        class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-6 flex items-center justify-between"
+        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-10 py-6 flex items-center justify-between"
       >
-        <a
-          href="#"
-          class="font-outfit tracking-[0.25em] font-semibold text-xl md:text-2xl"
-          >WEST<span class="mx-1">+</span>VITTORI</a
-        >
-        <nav class="hidden md:flex items-center gap-8 font-outfit text-sm">
-          <a href="#" class="hover:text-black"
-            >WORKPLACES <span class="ml-1 text-neutral-400">▾</span></a
+        <div class="">
+          <a href="/pages/home.html">
+            <img
+              src="/assets/images/LOGO.svg"
+              alt="logo"
+              class="w-[393.97px] h-[28px]"
+            />
+          </a>
+        </div>
+        <div class="flex gap-8">
+          <nav class="hidden md:flex items-center gap-10 font-outfit text-sm">
+            <a
+              href="#"
+              class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5"
+            >
+              WORKPLACES
+              <img
+                src="/assets/images/Vector.png"
+                alt="vector"
+                class="w-[6.52px] h-[5.63px] object-cover"
+              />
+            </a>
+
+            <a
+              href="#"
+              class="text-[--color-primary] font-outfit font-semibold text-[16.22px] flex items-center gap-1.5"
+            >
+              PROJECTS
+              <img
+                src="/assets/images/Vector.png"
+                alt="vector"
+                class="w-[6.52px] h-[5.63px] object-cover"
+              />
+            </a>
+
+            <a
+              href="#"
+              class="text-[--color-primary] font-outfit font-semibold text-[16.22px]"
+              >NEWS &amp; VIEWS</a
+            >
+            <a
+              href="/pages/about.html"
+              class="text-[--color-primary] font-outfit font-semibold text-[16.22px]"
+              >ABOUT US</a
+            >
+          </nav>
+
+          <a
+            href="#"
+            class="flex justify-center items-center gap-0 bg-[--color-quaternary] text-[16.22px] font-semibold text-[--color-primary] rounded-full w-[200px] h-[51px] font-outfit text-center"
           >
-          <a href="#" class="hover:text-black"
-            >PROJECTS <span class="ml-1 text-neutral-400">▾</span></a
-          >
-          <a href="#" class="hover:text-black">NEWS &amp; VIEWS</a>
-          <a href="/pages/about.html" class="hover:text-black">ABOUT US</a>
-        </nav>
-        <a
-          href="#"
-          class="inline-flex items-center bg-orange-400 hover:bg-orange-500 text-white rounded-full px-5 py-2.5 font-outfit text-sm shadow-sm"
-          >GET‑IN‑TOUCH</a
-        >
+            <div
+              class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"
+            ></div>
+            GET IN<span class="text-semibold">-</span> TOUCH
+          </a>
+        </div>
       </div>
     </header>
 
@@ -47,25 +84,23 @@
     <!-- Hero section start -->
     <section class="py-4">
       <div
-        class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
+        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
       >
-        <div
-          class="relative rounded-[40px] overflow-hidden shadow-[0_12px_28px_rgba(0,0,0,0.15)]"
-        >
+        <div class="relative">
           <img
             src="/assets/images/Mask_group.png"
             alt="Hero"
-            class="w-full h-[420px] md:h-[560px] object-cover"
+            class="w-full h-[629px] md:h-[560px] object-cover rounded-[40px] mx-auto"
           />
-          <div class="absolute inset-0 bg-black/30"></div>
+
           <div
-            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6"
+            class="absolute inset-0 flex flex-col items-center justify-end mb-[72px] text-center text-white px-6"
           >
-            <span class="font-platypi italic text-lg md:text-2xl mb-3"
+            <span class="font-platypi text-[30px] md:text-2xl mb-3 fw-300"
               >Logistics &amp; Warehousing</span
             >
             <h1
-              class="font-outfit font-semibold md:font-bold text-3xl md:text-5xl lg:text-6xl max-w-4xl leading-tight"
+              class="font-outfit fw-800 md:font-bold text-[68px] lg:w-[875px] w-full leading-[79.5px]"
             >
               Smart warehousing for modern supply chains
             </h1>
@@ -78,8 +113,9 @@
 
     <!-- mask group start -->
     <section class="py-16 bg-white overflow-hidden">
+      <img src="/assets/images/left-arrow.svg" />
       <div
-        class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
+        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
       >
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -90,7 +126,9 @@
                   alt="Landlords"
                   class="rounded-[40px] w-full mb-6"
                 />
-                <p class="font-outfit font-bold text-lg text-center">
+                <p
+                  class="font-outfit font-bold text-lg text-center category-title"
+                >
                   Landlords & Asset Managers
                 </p>
               </div>
@@ -102,7 +140,9 @@
                   alt="Occupiers"
                   class="rounded-[40px] w-full mb-6"
                 />
-                <p class="font-outfit font-bold text-lg text-center">
+                <p
+                  class="font-outfit font-bold text-lg text-center category-title"
+                >
                   Occupiers & Tenants
                 </p>
               </div>
@@ -115,7 +155,7 @@
                   class="rounded-[40px] w-full mb-6 border-2 border-transparent"
                 />
                 <p
-                  class="font-outfit font-bold text-lg text-center active-category"
+                  class="font-outfit font-bold text-lg text-center category-title"
                 >
                   Logistics & Warehousing
                 </p>
@@ -128,7 +168,9 @@
                   alt="Co-working"
                   class="rounded-[40px] w-full mb-6"
                 />
-                <p class="font-outfit font-bold text-lg text-center">
+                <p
+                  class="font-outfit font-bold text-lg text-center category-title"
+                >
                   Co-working & Serviced Offices
                 </p>
               </div>
@@ -141,7 +183,7 @@
                   class="rounded-[40px] w-full mb-6"
                 />
                 <p
-                  class="font-outfit font-bold text-lg text-center text-gray-400"
+                  class="font-outfit font-bold text-lg text-center category-title text-gray-400"
                 >
                   Landlords & Asset Managers
                 </p>
@@ -156,7 +198,7 @@
     <!-- Work places start -->
     <div class="bg-[#4CC0CD]">
       <div
-        class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-12"
+        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-12"
       >
         <marquee>
           <div class="flex items-center justify-between gap-6">
@@ -177,7 +219,7 @@
     <!-- About start -->
     <section class="py-20 bg-white overflow-hidden">
       <div
-        class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
+        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
       >
         <div class="mb-12">
           <img
@@ -317,11 +359,11 @@
 
     <!-- Product section start -->
     <section
-      class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-12"
+      class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-12"
     >
       <div class="py-20">
         <div
-          class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
+          class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
         >
           <div class="text-center mb-12">
             <h2
@@ -460,7 +502,7 @@
     <!-- Work with section start -->
     <section class="bg-[#FFB088] py-20">
       <div
-        class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
+        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
       >
         <div
           class="relative rounded-[60px] overflow-hidden mb-16 h-[400px] md:h-[500px]"
@@ -554,7 +596,7 @@
     <!-- News and views section start -->
 
     <section
-      class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-20 bg-white"
+      class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-20 bg-white"
     >
       <div class="flex flex-col items-center mb-12">
         <img src="/assets/images/logo_v2.png" alt="W Logo" class="h-10 mb-4" />
@@ -678,7 +720,7 @@
 
     <footer class="bg-[#4D4D4D] text-white pt-20 pb-10 font-outfit">
       <div
-        class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
+        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
       >
         <div class="text-center mb-24">
           <h2 class="text-[#4CC0CD] font-bold text-5xl md:text-6xl mb-4">
