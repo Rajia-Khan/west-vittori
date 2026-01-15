@@ -113,10 +113,13 @@
 
     <!-- mask group start -->
     <section class="py-16 bg-white overflow-hidden">
-      <img src="/assets/images/left-arrow.svg" />
       <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
+        class="relative lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
       >
+        <img
+          src="/assets/images/left-arrow.svg"
+          class="mySwiper-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
+        />
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -175,6 +178,7 @@
                 </p>
               </div>
             </div>
+            <!-- Duplicates for smooth looping -->
             <div class="swiper-slide">
               <div class="flex flex-col items-center">
                 <img
@@ -183,9 +187,51 @@
                   class="rounded-[40px] w-full mb-6"
                 />
                 <p
-                  class="font-outfit font-bold text-lg text-center category-title text-gray-400"
+                  class="font-outfit font-bold text-lg text-center category-title"
                 >
                   Landlords & Asset Managers
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img
+                  src="/assets/images/Mask3.png"
+                  alt="Occupiers"
+                  class="rounded-[40px] w-full mb-6"
+                />
+                <p
+                  class="font-outfit font-bold text-lg text-center category-title"
+                >
+                  Occupiers & Tenants
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img
+                  src="/assets/images/Mask_group.png"
+                  alt="Logistics"
+                  class="rounded-[40px] w-full mb-6 border-2 border-transparent"
+                />
+                <p
+                  class="font-outfit font-bold text-lg text-center category-title"
+                >
+                  Logistics & Warehousing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img
+                  src="/assets/images/Mask4.png"
+                  alt="Co-working"
+                  class="rounded-[40px] w-full mb-6"
+                />
+                <p
+                  class="font-outfit font-bold text-lg text-center category-title"
+                >
+                  Co-working & Serviced Offices
                 </p>
               </div>
             </div>

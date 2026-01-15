@@ -173,10 +173,85 @@
 }
 
 /* ================================
+   SERVICE SINGLE PAGE SLIDERS
+================================ */
+.service-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: var(--color-quaternary);
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.service-pagination .swiper-pagination-bullet-active {
+  background: var(--color-tertiary);
+  transform: scale(1.1);
+}
+
+.blog-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: white;
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.blog-pagination .swiper-pagination-bullet-active {
+  background: var(--color-quaternary);
+  transform: scale(1.1);
+}
+
+/* Service Image Swiper Opacity */
+.serviceImageSwiper .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.serviceImageSwiper .swiper-slide-active {
+  opacity: 1;
+}
+
+/* ================================
+   PROJECT HERO SWIPER
+================================ */
+.project-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: var(--color-quaternary);
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.project-pagination .swiper-pagination-bullet-active {
+  background: var(--color-tertiary);
+  transform: scale(1.1);
+}
+
+/* ================================
    CATEGORY SLIDER (mySwiper)
 ================================ */
+.mySwiper {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
 .mySwiper .swiper-wrapper {
   align-items: flex-end;
+  padding-top: 30px;
 }
 .mySwiper .swiper-slide {
   transition: transform 0.35s ease, opacity 0.35s ease;
@@ -201,4 +276,16 @@
   height: 2px;
   background: var(--color-primary);
   margin-top: 6px;
+}
+
+/* category of project section */
+
+.project-card {
+  transition: opacity 0.4s ease, transform 0.4s ease,
+    display 0.4s allow-discrete;
+}
+
+.project-card:hover h3 {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
