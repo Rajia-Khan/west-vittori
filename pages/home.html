@@ -14,72 +14,134 @@
     <link rel="stylesheet" href="/css/font.css" />
   </head>
   <body class="bg-white py-4">
-    <!-- Header start -->
     <header class="w-full">
+      <div class="hidden lg:block">
+        <div
+          class="lg:max-w-[1600px] mx-auto px-10 py-6 flex items-center justify-between"
+        >
+          <div>
+            <a href="/pages/home.html">
+              <img
+                src="/assets/images/LOGO.svg"
+                alt="logo"
+                class="w-[393.97px] h-[28px]"
+              />
+            </a>
+          </div>
+          <div class="flex gap-8">
+            <nav class="flex items-center gap-10 font-outfit text-sm">
+              <a
+                href="#"
+                class="text-[--color-primary] font-semibold text-[16.22px]"
+                >WORKPLACES</a
+              >
+              <a
+                href="#"
+                class="text-[--color-primary] font-semibold text-[16.22px]"
+                >PROJECTS</a
+              >
+              <a
+                href="#"
+                class="text-[--color-primary] font-semibold text-[16.22px]"
+                >NEWS & VIEWS</a
+              >
+              <a
+                href="/pages/about.html"
+                class="text-[--color-primary] font-semibold text-[16.22px]"
+                >ABOUT US</a
+              >
+            </nav>
+            <a
+              href="#"
+              class="flex justify-center items-center bg-[--color-quaternary] text-[16.22px] font-semibold rounded-full w-[200px] h-[51px]"
+            >
+              <div
+                class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"
+              ></div>
+              GET IN TOUCH
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-10 py-6 flex items-center justify-between"
+        class="lg:hidden flex items-center justify-between px-6 py-4 border-b"
       >
-        <div class="">
-          <a href="/pages/home.html">
-            <img
-              src="/assets/images/LOGO.svg"
-              alt="logo"
-              class="w-[393.97px] h-[28px]"
-            />
-          </a>
-        </div>
-        <div class="flex gap-8">
-          <nav class="hidden md:flex items-center gap-10 font-outfit text-sm">
-            <a
-              href="#"
-              class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5"
-            >
-              WORKPLACES
-              <img
-                src="/assets/images/Vector.png"
-                alt="vector"
-                class="w-[6.52px] h-[5.63px] object-cover"
-              />
-            </a>
+        <a href="/pages/home.html">
+          <img
+            src="/assets/images/LOGO.svg"
+            alt="logo"
+            class="w-[150px] h-auto"
+          />
+        </a>
 
-            <a
-              href="#"
-              class="text-[--color-primary] font-outfit font-semibold text-[16.22px] flex items-center gap-1.5"
-            >
-              PROJECTS
-              <img
-                src="/assets/images/Vector.png"
-                alt="vector"
-                class="w-[6.52px] h-[5.63px] object-cover"
-              />
-            </a>
-
-            <a
-              href="#"
-              class="text-[--color-primary] font-outfit font-semibold text-[16.22px]"
-              >NEWS &amp; VIEWS</a
-            >
-            <a
-              href="/pages/about.html"
-              class="text-[--color-primary] font-outfit font-semibold text-[16.22px]"
-              >ABOUT US</a
-            >
-          </nav>
-
-          <a
-            href="#"
-            class="flex justify-center items-center gap-0 bg-[--color-quaternary] text-[16.22px] font-semibold text-[--color-primary] rounded-full w-[200px] h-[51px] font-outfit text-center"
-          >
-            <div
-              class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"
-            ></div>
-            GET IN<span class="text-semibold">-</span> TOUCH
-          </a>
-        </div>
+        <button id="openSidebar" class="flex flex-col gap-1.5 p-2">
+          <span class="w-7 h-0.5 bg-black"></span>
+          <span class="w-7 h-0.5 bg-black"></span>
+          <span class="w-7 h-0.5 bg-black"></span>
+        </button>
       </div>
     </header>
 
-    <!-- Header end -->
+    <div
+      id="sidebarOverlay"
+      class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300"
+    ></div>
+
+    <div
+      id="sidebar"
+      class="fixed top-0 right-0 w-[80%] max-w-[350px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-xl"
+    >
+      <div class="p-8 flex flex-col h-full">
+        <button id="closeSidebar" class="self-end text-3xl font-light mb-8">
+          &times;
+        </button>
+
+        <nav class="flex flex-col gap-6 text-[20px] font-semibold font-outfit">
+          <a href="#" class="border-b pb-4">WORKPLACES</a>
+          <a href="#" class="border-b pb-4">PROJECTS</a>
+          <a href="#" class="border-b pb-4">NEWS & VIEWS</a>
+          <a href="/pages/about.html" class="border-b pb-4">ABOUT US</a>
+        </nav>
+      </div>
+    </div>
+
+    <div
+      id="sidebar"
+      class="fixed top-0 right-0 w-[300px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl"
+    >
+      <div class="p-6 flex flex-col h-full">
+        <button id="closeSidebar" class="self-end text-2xl font-bold p-2">
+          &times;
+        </button>
+
+        <nav
+          class="flex flex-col gap-6 mt-10 font-outfit font-semibold text-[18px]"
+        >
+          <a href="#" class="text-[--color-primary] border-b pb-2"
+            >WORKPLACES</a
+          >
+          <a href="#" class="text-[--color-primary] border-b pb-2">PROJECTS</a>
+          <a href="#" class="text-[--color-primary] border-b pb-2"
+            >NEWS & VIEWS</a
+          >
+          <a
+            href="/pages/about.html"
+            class="text-[--color-primary] border-b pb-2"
+            >ABOUT US</a
+          >
+        </nav>
+
+        <a
+          href="#"
+          class="mt-auto flex justify-center items-center bg-[--color-quaternary] py-4 rounded-full font-outfit font-semibold"
+        >
+          <div class="w-2.5 h-2.5 rounded-full bg-black mr-2"></div>
+          GET IN TOUCH
+        </a>
+      </div>
+    </div>
+    <!-- Responsive sidebar end -->
 
     <!-- Hero section start -->
     <section class="py-4">

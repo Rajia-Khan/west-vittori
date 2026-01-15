@@ -221,3 +221,24 @@ function filterProjects(category, element) {
     }
   });
 }
+
+const openBtn = document.getElementById("openSidebar");
+const closeBtn = document.getElementById("closeSidebar");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("sidebarOverlay");
+
+function toggleSidebar() {
+  // Slide sidebar in/out
+  sidebar.classList.toggle("translate-x-full");
+  // Fade overlay in/out
+  overlay.classList.toggle("opacity-0");
+  overlay.classList.toggle("pointer-events-none");
+  // Prevent body scrolling when menu is open
+  document.body.style.overflow = sidebar.classList.contains("translate-x-full")
+    ? "auto"
+    : "hidden";
+}
+
+openBtn.addEventListener("click", toggleSidebar);
+closeBtn.addEventListener("click", toggleSidebar);
+overlay.addEventListener("click", toggleSidebar);
