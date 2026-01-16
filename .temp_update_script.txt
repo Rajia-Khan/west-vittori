@@ -1,5 +1,0 @@
-service-single-page.html
-project.html
-project-single-page.html
-blog-page.html
-blog-single-page.html

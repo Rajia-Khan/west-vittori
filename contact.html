@@ -64,7 +64,7 @@
             <a href="/blog-page.html" class="text-[--color-primary] font-semibold text-[16.22px]">NEWS & VIEWS</a>
             <a href="/about.html" class="text-[--color-primary] font-semibold text-[16.22px]">ABOUT US</a>
           </nav>
-          <a href="#"
+          <a href="/contact.html"
             class="flex justify-center items-center bg-[--color-quaternary] text-[16.22px] font-semibold rounded-full w-[200px] h-[51px]">
             <div class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"></div>
             GET IN TOUCH
@@ -143,7 +143,7 @@
         <a href="/about.html" class="text-[--color-primary] border-b pb-2">ABOUT US</a>
       </nav>
 
-      <a href="#"
+      <a href="/contact.html"
         class="mt-auto flex justify-center items-center bg-[--color-quaternary] py-4 rounded-full font-outfit font-semibold">
         <div class="w-2.5 h-2.5 rounded-full bg-black mr-2"></div>
         GET IN TOUCH
@@ -154,17 +154,18 @@
 
   <!-- Hero section start -->
   <section class="py-12">
-    <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6">
+    <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-0">
       <div class="relative overflow-hidden rounded-[40px]">
         <img src="/assets/images/contact-us.png" alt="Contact Us Team"
-          class="w-full h-[450px] md:h-[500px] lg:h-[550px] object-cover" />
+          class="w-full h-[400px] md:h-[500px] lg:h-[550px] object-cover" />
 
-        <div class="absolute inset-0 flex items-end justify-between p-10 md:p-16 text-white">
+        <div
+          class="absolute inset-0 flex flex-col md:flex-row items-start md:items-end justify-between p-8 md:p-16 text-white gap-8 md:gap-0">
 
           <div class="flex flex-col gap-1">
             <span class="font-outfit text-sm md:text-base opacity-90">Contact us</span>
             <a href="mailto:hello@westandvittori.com"
-              class="font-outfit font-bold text-xl md:text-2xl lg:text-3xl hover:underline">
+              class="font-outfit font-bold text-xl md:text-2xl lg:text-3xl hover:underline break-all">
               hello@westandvittori.com
             </a>
             <a href="tel:02037724551" class="font-outfit font-bold text-xl md:text-2xl lg:text-3xl hover:underline">
@@ -187,8 +188,9 @@
   <!-- Hero section end -->
   <!-- Lets talk section-->
   <section class="py-24 bg-white font-outfit">
-    <div class="max-w-[800px] mx-auto px-6 text-center">
-      <h2 class="text-[42px] md:text-[56px] font-bold text-black mb-16 tracking-tight">
+    <div class="max-w-[800px] mx-auto px-4 text-center">
+      <h2
+        class="text-3xl md:text-[56px] font-gotham font-extrabold text-black mb-10 md:mb-16 tracking-tight leading-[1.1]">
         Think we’re a good fit? Let’s talk
       </h2>
 
@@ -197,7 +199,7 @@
           <label class="text-gray-600 text-[18px] whitespace-nowrap">This is a ...</label>
           <div class="relative w-full">
             <select
-              class="w-full bg-transparent appearance-none font-bold text-[18px] text-black focus:outline-none cursor-pointer">
+              class="w-full bg-transparent appearance-none font-gotham font-extrabold text-[20px] text-black focus:outline-none cursor-pointer">
               <option>Coworking & Serviced Office Spaces Enq.</option>
               <option>Logistics & Warehousing Enq.</option>
               <option>Landlords & Asset Managers Enq.</option>
@@ -213,18 +215,18 @@
         <div class="flex flex-col md:flex-row items-baseline gap-4 border-b border-gray-400 pb-2">
           <label for="name" class="text-gray-600 text-[18px] whitespace-nowrap">Name</label>
           <input type="text" id="name"
-            class="w-full bg-transparent font-bold text-[18px] text-black focus:outline-none" />
+            class="w-full bg-transparent font-gotham font-extrabold text-[20px] text-black focus:outline-none" />
         </div>
 
         <div class="flex flex-col md:flex-row items-baseline gap-4 border-b border-gray-400 pb-2">
           <label for="email" class="text-gray-600 text-[18px] whitespace-nowrap">Email</label>
           <input type="email" id="email"
-            class="w-full bg-transparent font-bold text-[18px] text-black focus:outline-none" />
+            class="w-full bg-transparent font-gotham font-extrabold text-[20px] text-black focus:outline-none" />
         </div>
 
         <div class="flex justify-end mt-4">
           <button type="submit"
-            class="px-10 py-3 border border-black rounded-md text-[14px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">
+            class="px-10 py-4 border-2 border-black rounded-xl text-[14px] font-gotham font-extrabold uppercase tracking-widest hover:bg-black hover:text-white transition-all">
             Request a Call Back
           </button>
         </div>
@@ -236,15 +238,15 @@
 
   <!--  -->
 
-  <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6">
+  <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-0">
     <div class="flex flex-col lg:flex-row gap-12 lg:items-center">
       <!-- Left Side: Content -->
       <div class="lg:w-1/2 w-full text-black">
         <span class="font-outfit text-sm font-bold uppercase tracking-widest mb-6 block">We're global</span>
-        <h1 class="font-outfit font-bold text-5xl md:text-[64px] mb-8 leading-[1.1]">
+        <h1 class="font-gotham font-extrabold text-4xl md:text-[64px] mb-8 leading-[1.1]">
           HQ, London Office
         </h1>
-        <p class="font-outfit font-bold text-2xl md:text-3xl mb-10 max-w-lg">
+        <p class="font-gotham font-extrabold text-xl md:text-3xl mb-10 max-w-lg">
           15 Long Lane, Barbican,<br />
           London, EC1A 9PN
         </p>
@@ -264,13 +266,16 @@
           <div class="swiper contactImageSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="/assets/images/girl.png" alt="Office Girl" class="w-full h-[600px] object-cover" />
+                <img src="/assets/images/girl.png" alt="Office Girl"
+                  class="w-full h-[400px] md:h-[600px] object-cover" />
               </div>
               <div class="swiper-slide">
-                <img src="/assets/images/p6.png" alt="Office Space" class="w-full h-[600px] object-cover" />
+                <img src="/assets/images/p6.png" alt="Office Space"
+                  class="w-full h-[400px] md:h-[600px] object-cover" />
               </div>
               <div class="swiper-slide">
-                <img src="/assets/images/p4.png" alt="Meeting Room" class="w-full h-[600px] object-cover" />
+                <img src="/assets/images/p4.png" alt="Meeting Room"
+                  class="w-full h-[400px] md:h-[600px] object-cover" />
               </div>
             </div>
           </div>

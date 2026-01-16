@@ -25,6 +25,10 @@
   font-style: normal;
 }
 
+.font-gotham {
+  font-family: "Gotham-Black", sans-serif;
+}
+
 /* ================================
    FONT WEIGHTS
 ================================ */
@@ -212,32 +216,46 @@
 /* ================================
    SERVICE SINGLE PAGE SLIDERS
 ================================ */
+.service-pagination {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 .service-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: var(--color-quaternary);
+  width: 14px;
+  height: 14px;
+  background: var(--color-quaternary) !important;
   opacity: 1;
-  margin: 0 6px !important;
+  margin: 0 8px !important;
   transition: all 0.3s ease;
 }
 
 .service-pagination .swiper-pagination-bullet-active {
-  background: var(--color-tertiary);
-  transform: scale(1.1);
+  background: var(--color-tertiary) !important;
+  width: 27px;
+  height: 27px;
+}
+
+.blog-pagination {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .blog-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: white;
+  width: 14px;
+  height: 14px;
+  background: var(--color-quaternary) !important;
   opacity: 1;
-  margin: 0 6px !important;
+  margin: 0 8px !important;
   transition: all 0.3s ease;
 }
 
 .blog-pagination .swiper-pagination-bullet-active {
-  background: var(--color-quaternary);
-  transform: scale(1.1);
+  background: white !important;
+  width: 27px;
+  height: 27px;
 }
 
 /* Service Image Swiper Opacity */
