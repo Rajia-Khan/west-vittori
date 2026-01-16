@@ -1,464 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>West+Vittori</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/font.css" />
-  </head>
-  <body class="bg-white py-4">
-    <!-- Header start -->
-    <header class="w-full">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-10 py-6 flex items-center justify-between"
-      >
-        <div class="">
-          <a href="/pages/home.html">
-            <img
-              src="/assets/images/LOGO.svg"
-              alt="logo"
-              class="w-[393.97px] h-[28px]"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West+Vittori</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/font.css" />
+</head>
+
+<body class="bg-white ">
+  <header class="w-full">
+    <div class="hidden lg:block">
+      <div class="lg:max-w-[1600px] mx-auto px-10 py-6 flex items-center justify-between">
+        <div>
+          <a href="/index.html">
+            <img src="/assets/images/LOGO.svg" alt="logo" class="w-[393.97px] h-[28px]" />
           </a>
         </div>
         <div class="flex gap-8">
-          <nav class="hidden md:flex items-center gap-10 font-outfit text-sm">
-            <a
-              href="#"
-              class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5"
-            >
-              WORKPLACES
-              <img
-                src="/assets/images/Vector.png"
-                alt="vector"
-                class="w-[6.52px] h-[5.63px] object-cover"
-              />
-            </a>
+          <nav class="flex items-center gap-10 font-outfit text-sm">
+            <!-- WORKPLACES Dropdown -->
+            <div class="relative group">
+              <a href="#" class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5">
+                WORKPLACES
+                <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
+              </a>
+              <div
+                class="absolute top-full left-0 mt-2 w-[280px] bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div class="py-3">
+                  <a href="#"
+                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Landlords
+                    & Asset Managers</a>
+                  <a href="#"
+                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Occupiers
+                    & Tenants</a>
+                  <a href="#"
+                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Logistics
+                    & Warehousing</a>
+                  <a href="/service-single-page.html"
+                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Co-working
+                    & Serviced Offices</a>
+                  <a href="/blog-single-page.html"
+                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Blog
+                    Details</a>
+                </div>
+              </div>
+            </div>
 
-            <a
-              href="#"
-              class="text-[--color-primary] font-outfit font-semibold text-[16.22px] flex items-center gap-1.5"
-            >
-              PROJECTS
-              <img
-                src="/assets/images/Vector.png"
-                alt="vector"
-                class="w-[6.52px] h-[5.63px] object-cover"
-              />
-            </a>
+            <!-- PROJECTS Dropdown -->
+            <div class="relative group">
+              <a href="#" class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5">
+                PROJECTS
+                <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
+              </a>
+              <div
+                class="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div class="py-3">
+                  <a href="/project.html"
+                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">All
+                    Projects</a>
+                  <a href="/project-single-page.html"
+                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Project
+                    Details</a>
+                </div>
+              </div>
+            </div>
 
-            <a
-              href="#"
-              class="text-[--color-primary] font-outfit font-semibold text-[16.22px]"
-              >NEWS &amp; VIEWS</a
-            >
-            <a
-              href="/pages/about.html"
-              class="text-[--color-primary] font-outfit font-semibold text-[16.22px]"
-              >ABOUT US</a
-            >
+            <a href="/blog-page.html" class="text-[--color-primary] font-semibold text-[16.22px]">NEWS & VIEWS</a>
+            <a href="/about.html" class="text-[--color-primary] font-semibold text-[16.22px]">ABOUT US</a>
           </nav>
-
-          <a
-            href="#"
-            class="flex justify-center items-center gap-0 bg-[--color-quaternary] text-[16.22px] font-semibold text-[--color-primary] rounded-full w-[200px] h-[51px] font-outfit text-center"
-          >
-            <div
-              class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"
-            ></div>
-            GET IN<span class="text-semibold">-</span> TOUCH
+          <a href="#"
+            class="flex justify-center items-center bg-[--color-quaternary] text-[16.22px] font-semibold rounded-full w-[200px] h-[51px]">
+            <div class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"></div>
+            GET IN TOUCH
           </a>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Header end -->
+    <div class="lg:hidden flex items-center justify-between px-6 py-4 border-b">
+      <a href="/index.html">
+        <img src="/assets/images/LOGO.svg" alt="logo" class="w-[150px] h-auto" />
+      </a>
 
-    <!-- Hero section start -->
-    <section class="py-4">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
-      >
-        <img
-          src="/assets/images/office-space.png"
-          alt="office-space"
-          class="h-[646px] mx-auto"
-        />
+      <button id="openSidebar" class="flex flex-col gap-1.5 p-2">
+        <span class="w-7 h-0.5 bg-black"></span>
+        <span class="w-7 h-0.5 bg-black"></span>
+        <span class="w-7 h-0.5 bg-black"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="sidebarOverlay"
+    class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <div id="sidebar"
+    class="fixed top-0 right-0 w-[80%] max-w-[350px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-xl">
+    <div class="p-8 flex flex-col h-full">
+      <button id="closeSidebar" class="self-end text-3xl font-light mb-8">
+        &times;
+      </button>
+
+      <nav class="flex flex-col gap-6 text-[20px] font-semibold font-outfit">
+        <!-- WORKPLACES Dropdown -->
+        <div class="border-b pb-4">
+          <button onclick="toggleMobileDropdown('workplaces-mobile')"
+            class="flex items-center justify-between w-full text-left">
+            <span>WORKPLACES</span>
+            <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
+          </button>
+          <div id="workplaces-mobile" class="hidden mt-3 ml-4 space-y-3">
+            <a href="#" class="block text-[16px] font-normal">Landlords & Asset Managers</a>
+            <a href="#" class="block text-[16px] font-normal">Occupiers & Tenants</a>
+            <a href="#" class="block text-[16px] font-normal">Logistics & Warehousing</a>
+            <a href="/service-single-page.html" class="block text-[16px] font-normal">Co-working & Serviced Offices</a>
+            <a href="/blog-single-page.html" class="block text-[16px] font-normal">Blog Details</a>
+          </div>
+        </div>
+
+        <!-- PROJECTS Dropdown -->
+        <div class="border-b pb-4">
+          <button onclick="toggleMobileDropdown('projects-mobile')"
+            class="flex items-center justify-between w-full text-left">
+            <span>PROJECTS</span>
+            <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
+          </button>
+          <div id="projects-mobile" class="hidden mt-3 ml-4 space-y-3">
+            <a href="/project.html" class="block text-[16px] font-normal">All Projects</a>
+            <a href="/project-single-page.html" class="block text-[16px] font-normal">Project Details</a>
+          </div>
+        </div>
+
+        <a href="/blog-page.html" class="border-b pb-4">NEWS & VIEWS</a>
+        <a href="/about.html" class="border-b pb-4">ABOUT US</a>
+      </nav>
+    </div>
+  </div>
+
+  <div id="sidebar"
+    class="fixed top-0 right-0 w-[300px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl">
+    <div class="p-6 flex flex-col h-full">
+      <button id="closeSidebar" class="self-end text-2xl font-bold p-2">
+        &times;
+      </button>
+
+      <nav class="flex flex-col gap-6 mt-10 font-outfit font-semibold text-[18px]">
+        <a href="#" class="text-[--color-primary] border-b pb-2">WORKPLACES</a>
+        <a href="#" class="text-[--color-primary] border-b pb-2">PROJECTS</a>
+        <a href="#" class="text-[--color-primary] border-b pb-2">NEWS & VIEWS</a>
+        <a href="/about.html" class="text-[--color-primary] border-b pb-2">ABOUT US</a>
+      </nav>
+
+      <a href="#"
+        class="mt-auto flex justify-center items-center bg-[--color-quaternary] py-4 rounded-full font-outfit font-semibold">
+        <div class="w-2.5 h-2.5 rounded-full bg-black mr-2"></div>
+        GET IN TOUCH
+      </a>
+    </div>
+  </div>
+  <!-- Responsive sidebar end -->
+
+  <!-- Hero section start -->
+  <section class="py-4">
+    <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
+      <img src="/assets/images/office-space.png" alt="office-space" class="h-[646px] mx-auto" />
+    </div>
+  </section>
+
+  <!-- Hero section end -->
+
+  <!-- Optimise with flexibility start-->
+  <section class="py-20 font-outfit">
+    <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 flex flex-col items-center">
+      <div class="flex gap-8 mb-12 text-[12px] font-bold uppercase tracking-widest">
+        <a href="#" class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-black rounded-full"></span> Share</a>
+        <a href="#" class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-black rounded-full"></span> Back to
+          Blog</a>
       </div>
-    </section>
 
-    <!-- Hero section end -->
+      <div class="w-full max-w-[757px]">
+        <h2 class="text-[42px] font-bold leading-tight mb-6 text-black">
+          Optimise with flexibility
+        </h2>
+        <p class="text-[18px] leading-[1.6] text-gray-800 mb-10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-    <!-- Optimise with flexibility start-->
-    <section class="py-20 font-outfit">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 flex flex-col items-center"
-      >
-        <div
-          class="flex gap-8 mb-12 text-[12px] font-bold uppercase tracking-widest"
-        >
-          <a href="#" class="flex items-center gap-2"
-            ><span class="w-1.5 h-1.5 bg-black rounded-full"></span> Share</a
-          >
-          <a href="#" class="flex items-center gap-2"
-            ><span class="w-1.5 h-1.5 bg-black rounded-full"></span> Back to
-            Blog</a
-          >
+        <h3 class="text-[24px] font-bold mb-4">Subtitle goes here</h3>
+        <p class="text-[18px] leading-[1.6] text-gray-800 mb-12">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div class="w-full mb-12">
+        <img src="/assets/images/office-table.png" alt="Office interior"
+          class="w-full h-auto rounded-[40px] object-cover" />
+      </div>
+
+      <div class="w-full max-w-[757px]">
+        <h3 class="text-[24px] font-bold mb-4">Subtitle goes here</h3>
+        <p class="text-[18px] leading-[1.6] text-gray-800 mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <ul class="space-y-4 mb-10 list-disc list-inside text-[18px] text-gray-800">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </li>
+          <li>Ut enim ad minim veniam, quis nostrud exercitation.</li>
+          <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse.
+          </li>
+        </ul>
+
+        <p class="text-[18px] leading-[1.6] text-gray-800 mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <ol class="space-y-4 mb-16 list-decimal list-inside text-[18px] text-gray-800">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </li>
+          <li>Ut enim ad minim veniam, quis nostrud exercitation.</li>
+          <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse.
+          </li>
+        </ol>
+
+        <blockquote class="mb-12">
+          <p class="text-[24px] italic font-medium leading-relaxed text-black mb-4">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <cite class="not-italic text-[14px] font-bold text-gray-600">Name of author goes here</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optimise with flexibility end  -->
+
+  <!-- Fancy reading section start -->
+  <section class="bg-[#FBC4A0] py-20 font-outfit">
+    <div class="lg:max-w-[1600px] md:max-w-[1200px] max-w-[350px] mx-auto md:px-6 px-2">
+      <h2 class="text-center text-black text-[32px] md:text-[42px] font-bold mb-16">
+        Fancy reading some more?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col">
+          <div class="mb-6 overflow-hidden rounded-[40px]">
+            <img src="/assets/images/s4.png" alt="Logistics & Warehousing"
+              class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <span class="text-[14px] font-medium text-black mb-2">Logistics & Warehousing</span>
+          <h3 class="text-[20px] font-bold leading-tight text-black max-w-[280px]">
+            Logistics and access to data server centres
+          </h3>
         </div>
 
-        <div class="w-full max-w-[757px]">
-          <h2 class="text-[42px] font-bold leading-tight mb-6 text-black">
-            Optimise with flexibility
-          </h2>
-          <p class="text-[18px] leading-[1.6] text-gray-800 mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-
-          <h3 class="text-[24px] font-bold mb-4">Subtitle goes here</h3>
-          <p class="text-[18px] leading-[1.6] text-gray-800 mb-12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        <div class="flex flex-col">
+          <div class="mb-6 overflow-hidden rounded-[40px]">
+            <img src="/assets/images/s5.png" alt="Coworking & Serviced Offices"
+              class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <span class="text-[14px] font-medium text-black mb-2">Coworking & Serviced Offices</span>
+          <h3 class="text-[20px] font-bold leading-tight text-black max-w-[280px]">
+            Create effective workspaces with furniture
+          </h3>
         </div>
 
-        <div class="w-full mb-12">
-          <img
-            src="/assets/images/office-table.png"
-            alt="Office interior"
-            class="w-full h-auto rounded-[40px] object-cover"
-          />
+        <div class="flex flex-col">
+          <div class="mb-6 overflow-hidden rounded-[40px]">
+            <img src="/assets/images/s6.png" alt="Landlords & Asset Managers"
+              class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <span class="text-[14px] font-medium text-black mb-2">Landlords & Asset Managers</span>
+          <h3 class="text-[20px] font-bold leading-tight text-black max-w-[280px]">
+            Boost Your building's Value and Appeal
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fancy reading section end -->
+
+  <!-- Partners section start -->
+
+  <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 py-12">
+    <marquee>
+      <div class="flex items-center justify-between gap-6">
+        <img src="/assets/images/partners.png" alt="Group" class="" />
+        <img src="/assets/images/partners2.png" alt="Group" class="  " />
+      </div>
+    </marquee>
+  </div>
+  <!-- Partners section end  -->
+
+
+  <!-- Footer start -->
+  <footer class="bg-[#4E4F50] text-white pt-24 pb-20 font-sans">
+    <div class="lg:max-w-[1400px]  w-full mx-auto px-8">
+
+      <div class="text-center mb-24">
+        <h2 class="text-[--color-tertiary] font-gotham font-extrabold lg:text-[60px] text-[40px] leading-tight mb-0">
+          A united vision
+        </h2>
+        <p class="font-platypi text-[16px] lg:text-[33px] text-white opacity-90">
+          Creating purposeful workplaces.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-28">
+        <div class="md:col-span-6 lg:col-span-7 flex flex-col">
+          <h4 class="text-[--color-tertiary] font-semibold text-[17px] tracking-widest uppercase mb-10">
+            UK HEADQUARTERS
+          </h4>
+          <div class="mb-8">
+            <a href="mailto:hello@westandvittori.com"
+              class="block font-platypi lg:text-[30px] text-[20px] hover:text-[--color-tertiary] transition-colors mb-2 leading-tight">
+              hello@westandvittori.com</br> 0203 772 4551
+            </a>
+
+          </div>
+          <address class="not-italic text-[15px] leading-relaxed opacity-90">
+            <strong class="block mb-1 text-white font-bold">West+Vittori</strong>
+            15 Long Lane<br />
+            Barbican<br />
+            London<br />
+            EC1A 9PN
+          </address>
         </div>
 
-        <div class="w-full max-w-[757px]">
-          <h3 class="text-[24px] font-bold mb-4">Subtitle goes here</h3>
-          <p class="text-[18px] leading-[1.6] text-gray-800 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-
-          <ul
-            class="space-y-4 mb-10 list-disc list-inside text-[18px] text-gray-800"
-          >
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div class="md:col-span-3 lg:col-span-3 flex flex-col">
+          <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
+            WORKPLACES
+          </h4>
+          <ul class="space-y-4 text-[15px] opacity-90">
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Landlord & Assets Managers</a>
             </li>
-            <li>Ut enim ad minim veniam, quis nostrud exercitation.</li>
-            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse.
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Occupiers & Tenants</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Logistics & Warehousing</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Co-working & Serviced Offices</a>
             </li>
           </ul>
+        </div>
 
-          <p class="text-[18px] leading-[1.6] text-gray-800 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-
-          <ol
-            class="space-y-4 mb-16 list-decimal list-inside text-[18px] text-gray-800"
-          >
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </li>
-            <li>Ut enim ad minim veniam, quis nostrud exercitation.</li>
-            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse.
-            </li>
-          </ol>
-
-          <blockquote class="mb-12">
-            <p
-              class="text-[24px] italic font-medium leading-relaxed text-black mb-4"
-            >
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <cite class="not-italic text-[14px] font-bold text-gray-600"
-              >Name of author goes here</cite
-            >
-          </blockquote>
+        <div class="md:col-span-3 lg:col-span-2 flex flex-col">
+          <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
+            COMPANY
+          </h4>
+          <ul class="space-y-4 text-[15px] opacity-90">
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Projects</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">News & Views</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- Optimise with flexibility end  -->
+      <div class="flex flex-col md:flex-row justify-between items-end gap-10">
+        <div class="space-y-8">
+          <h3 class="font-serif text-[36px] text-[#4CC0CD] leading-tight">
+            Ideas that shape smarter workplaces
+          </h3>
+          <a href="#"
+            class="inline-block border border-[#4CC0CD] px-10 py-3 rounded-[4px] font-bold text-[12px] tracking-[0.2em] uppercase text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all">
+            SUBSCRIBE
+          </a>
+        </div>
 
-    <!-- Fancy reading section start -->
-    <section class="bg-[#FBC4A0] py-20 font-outfit">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[1200px] max-w-[350px] mx-auto px-6"
-      >
-        <h2
-          class="text-center text-black text-[32px] md:text-[42px] font-bold mb-16"
-        >
-          Fancy reading some more?
-        </h2>
+        <div class="flex gap-3">
+          <img src="/assets/images/instagram.png" class="cursor-pointer" />
+          <img src="/assets/images/fb.png" class="cursor-pointer" />
+          <img src="/assets/images/youtube.png" class="cursor-pointer" />
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="flex flex-col">
-            <div class="mb-6 overflow-hidden rounded-[40px]">
-              <img
-                src="/assets/images/s4.png"
-                alt="Logistics & Warehousing"
-                class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <span class="text-[14px] font-medium text-black mb-2"
-              >Logistics & Warehousing</span
-            >
-            <h3
-              class="text-[20px] font-bold leading-tight text-black max-w-[280px]"
-            >
-              Logistics and access to data server centres
-            </h3>
-          </div>
+          <img src="/assets/images/x.png" class="cursor-pointer" />
+          <img src="/assets/images/linkedin.png" class="cursor-pointer" />
 
-          <div class="flex flex-col">
-            <div class="mb-6 overflow-hidden rounded-[40px]">
-              <img
-                src="/assets/images/s5.png"
-                alt="Coworking & Serviced Offices"
-                class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <span class="text-[14px] font-medium text-black mb-2"
-              >Coworking & Serviced Offices</span
-            >
-            <h3
-              class="text-[20px] font-bold leading-tight text-black max-w-[280px]"
-            >
-              Create effective workspaces with furniture
-            </h3>
-          </div>
-
-          <div class="flex flex-col">
-            <div class="mb-6 overflow-hidden rounded-[40px]">
-              <img
-                src="/assets/images/s6.png"
-                alt="Landlords & Asset Managers"
-                class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <span class="text-[14px] font-medium text-black mb-2"
-              >Landlords & Asset Managers</span
-            >
-            <h3
-              class="text-[20px] font-bold leading-tight text-black max-w-[280px]"
-            >
-              Boost Your building's Value and Appeal
-            </h3>
-          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Fancy reading section end -->
-
-    <!-- Partners section start -->
-
-    <div
-      class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-12"
-    >
-      <marquee>
-        <div class="flex items-center justify-between gap-6">
-          <img src="/assets/images/partners.png" alt="Group" class="" />
-          <img src="/assets/images/partners2.png" alt="Group" class="  " />
-        </div>
-      </marquee>
     </div>
-    <!-- Partners section end  -->
+  </footer>
 
-    <!-- Footer start -->
-
-    <footer class="bg-[#4D4D4D] text-white pt-20 pb-10 font-outfit">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
-      >
-        <div class="text-center mb-24">
-          <h2 class="text-[#4CC0CD] font-bold text-5xl md:text-6xl mb-4">
-            A united vision
-          </h2>
-          <p class="font-platypi text-2xl md:text-3xl opacity-90 italic">
-            Creating purposeful workplaces.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-          <div>
-            <h4
-              class="text-[#4CC0CD] font-bold text-sm tracking-widest uppercase mb-8"
-            >
-              UK Headquarters
-            </h4>
-            <div class="space-y-2 mb-8">
-              <a
-                href="mailto:hello@westandvittori.com"
-                class="block font-platypi text-2xl hover:text-[#4CC0CD] transition-colors"
-                >hello@westandvittori.com</a
-              >
-              <p class="font-platypi text-2xl">0203 772 4551</p>
-            </div>
-            <address
-              class="not-italic font-outfit text-sm leading-relaxed opacity-80"
-            >
-              <strong class="block mb-1">West+Vittori</strong>
-              15 Long Lane<br />
-              Barbican<br />
-              London<br />
-              EC1A 9PN
-            </address>
-          </div>
-
-          <div>
-            <h4
-              class="text-[#4CC0CD] font-bold text-sm tracking-widest uppercase mb-8"
-            >
-              Workplaces
-            </h4>
-            <ul class="space-y-4 font-outfit text-sm opacity-80">
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Landlord & Assets Managers</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Occupiers & Tenants</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Logistics & Warehousing</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Co-working & Serviced Offices</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4
-              class="text-[#4CC0CD] font-bold text-sm tracking-widest uppercase mb-8"
-            >
-              Company
-            </h4>
-            <ul class="space-y-4 font-outfit text-sm opacity-80">
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >News & Views</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-12 mb-8 gap-8"
-        >
-          <div class="space-y-6">
-            <h3 class="font-platypi text-3xl text-[#4CC0CD] italic">
-              Ideas that shape smarter workplaces
-            </h3>
-            <button
-              class="border border-[#4CC0CD] px-10 py-3 rounded-md font-bold text-xs tracking-widest uppercase hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all"
-            >
-              Subscribe
-            </button>
-          </div>
-
-          <div class="flex gap-4">
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-x-twitter"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col md:flex-row justify-between items-center text-[10px] opacity-60 tracking-wider font-outfit uppercase"
-        >
-          <div class="flex gap-4">
-            <span>© 2025 West and Vittori Ltd.</span>
-            <a href="#" class="hover:underline">Privacy Policy</a>
-          </div>
-          <div>Web Design & Build by <span class="font-bold">6rs</span></div>
-        </div>
+  <div class="bg-white py-6 border-t border-gray-100">
+    <div
+      class="max-w-[1400px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center text-[11px] uppercase tracking-widest text-black">
+      <div class="flex gap-6">
+        <span class="opacity-70">© 2025 West and Vittori Ltd.</span>
+        <a href="#" class="hover:underline">Privacy Policy</a>
       </div>
-    </footer>
-    <!-- Footer end  -->
+      <div class="mt-4 md:mt-0 opacity-70">
+        Web Design & Build by <span class="font-bold">6rs</span>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="/script.js"></script>
-  </body>
+  <!-- Footer end  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="/script.js"></script>
+</body>
+
 </html>

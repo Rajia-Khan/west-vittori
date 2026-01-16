@@ -242,3 +242,11 @@ function toggleSidebar() {
 openBtn.addEventListener("click", toggleSidebar);
 closeBtn.addEventListener("click", toggleSidebar);
 overlay.addEventListener("click", toggleSidebar);
+
+// Mobile dropdown toggle function
+function toggleMobileDropdown(id) {
+  const dropdown = document.getElementById(id);
+  if (dropdown) {
+    dropdown.classList.toggle("hidden");
+  }
+}

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/font.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 
 <body class="bg-white">
@@ -16,17 +18,66 @@
         <div class="hidden lg:block">
             <div class="lg:max-w-[1600px] mx-auto px-10 py-6 flex items-center justify-between">
                 <div>
-                    <a href="/pages/home.html">
+                    <a href="/index.html">
                         <img src="/assets/images/LOGO.svg" alt="logo" class="w-[393.97px] h-[28px]" />
                     </a>
                 </div>
                 <div class="flex gap-8">
                     <nav class="flex items-center gap-10 font-outfit text-sm">
-                        <a href="#" class="text-[--color-primary] font-semibold text-[16.22px]">WORKPLACES</a>
-                        <a href="#" class="text-[--color-primary] font-semibold text-[16.22px]">PROJECTS</a>
-                        <a href="#" class="text-[--color-primary] font-semibold text-[16.22px]">NEWS & VIEWS</a>
-                        <a href="/pages/about.html" class="text-[--color-primary] font-semibold text-[16.22px]">ABOUT
-                            US</a>
+                        <!-- WORKPLACES Dropdown -->
+                        <div class="relative group">
+                            <a href="#"
+                                class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5">
+                                WORKPLACES
+                                <img src="/assets/images/Vector.png" alt="dropdown"
+                                    class="w-[6.52px] h-[5.63px] object-cover" />
+                            </a>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-[280px] bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="py-3">
+                                    <a href="#"
+                                        class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Landlords
+                                        & Asset Managers</a>
+                                    <a href="#"
+                                        class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Occupiers
+                                        & Tenants</a>
+                                    <a href="#"
+                                        class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Logistics
+                                        & Warehousing</a>
+                                    <a href="/service-single-page.html"
+                                        class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Co-working
+                                        & Serviced Offices</a>
+                                    <a href="/blog-single-page.html"
+                                        class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Blog
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECTS Dropdown -->
+                        <div class="relative group">
+                            <a href="#"
+                                class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5">
+                                PROJECTS
+                                <img src="/assets/images/Vector.png" alt="dropdown"
+                                    class="w-[6.52px] h-[5.63px] object-cover" />
+                            </a>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="py-3">
+                                    <a href="/project.html"
+                                        class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">All
+                                        Projects</a>
+                                    <a href="/project-single-page.html"
+                                        class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Project
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="/blog-page.html" class="text-[--color-primary] font-semibold text-[16.22px]">NEWS &
+                            VIEWS</a>
+                        <a href="/about.html" class="text-[--color-primary] font-semibold text-[16.22px]">ABOUT US</a>
                     </nav>
                     <a href="#"
                         class="flex justify-center items-center bg-[--color-quaternary] text-[16.22px] font-semibold rounded-full w-[200px] h-[51px]">
@@ -38,7 +89,7 @@
         </div>
 
         <div class="lg:hidden flex items-center justify-between px-6 py-4 border-b">
-            <a href="/pages/home.html">
+            <a href="/index.html">
                 <img src="/assets/images/LOGO.svg" alt="logo" class="w-[150px] h-auto" />
             </a>
 
@@ -61,10 +112,40 @@
             </button>
 
             <nav class="flex flex-col gap-6 text-[20px] font-semibold font-outfit">
-                <a href="#" class="border-b pb-4">WORKPLACES</a>
-                <a href="#" class="border-b pb-4">PROJECTS</a>
-                <a href="#" class="border-b pb-4">NEWS & VIEWS</a>
-                <a href="/pages/about.html" class="border-b pb-4">ABOUT US</a>
+                <!-- WORKPLACES Dropdown -->
+                <div class="border-b pb-4">
+                    <button onclick="toggleMobileDropdown('workplaces-mobile')"
+                        class="flex items-center justify-between w-full text-left">
+                        <span>WORKPLACES</span>
+                        <img src="/assets/images/Vector.png" alt="dropdown"
+                            class="w-[6.52px] h-[5.63px] object-cover" />
+                    </button>
+                    <div id="workplaces-mobile" class="hidden mt-3 ml-4 space-y-3">
+                        <a href="#" class="block text-[16px] font-normal">Landlords & Asset Managers</a>
+                        <a href="#" class="block text-[16px] font-normal">Occupiers & Tenants</a>
+                        <a href="#" class="block text-[16px] font-normal">Logistics & Warehousing</a>
+                        <a href="/service-single-page.html" class="block text-[16px] font-normal">Co-working & Serviced
+                            Offices</a>
+                        <a href="/blog-single-page.html" class="block text-[16px] font-normal">Blog Details</a>
+                    </div>
+                </div>
+
+                <!-- PROJECTS Dropdown -->
+                <div class="border-b pb-4">
+                    <button onclick="toggleMobileDropdown('projects-mobile')"
+                        class="flex items-center justify-between w-full text-left">
+                        <span>PROJECTS</span>
+                        <img src="/assets/images/Vector.png" alt="dropdown"
+                            class="w-[6.52px] h-[5.63px] object-cover" />
+                    </button>
+                    <div id="projects-mobile" class="hidden mt-3 ml-4 space-y-3">
+                        <a href="/project.html" class="block text-[16px] font-normal">All Projects</a>
+                        <a href="/project-single-page.html" class="block text-[16px] font-normal">Project Details</a>
+                    </div>
+                </div>
+
+                <a href="/blog-page.html" class="border-b pb-4">NEWS & VIEWS</a>
+                <a href="/about.html" class="border-b pb-4">ABOUT US</a>
             </nav>
         </div>
     </div>
@@ -80,7 +161,7 @@
                 <a href="#" class="text-[--color-primary] border-b pb-2">WORKPLACES</a>
                 <a href="#" class="text-[--color-primary] border-b pb-2">PROJECTS</a>
                 <a href="#" class="text-[--color-primary] border-b pb-2">NEWS & VIEWS</a>
-                <a href="/pages/about.html" class="text-[--color-primary] border-b pb-2">ABOUT US</a>
+                <a href="/about.html" class="text-[--color-primary] border-b pb-2">ABOUT US</a>
             </nav>
 
             <a href="#"
