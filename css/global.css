@@ -259,12 +259,14 @@
 }
 
 /* Service Image Swiper Opacity */
-.serviceImageSwiper .swiper-slide {
+.serviceImageSwiper .swiper-slide,
+.blogImageSwiper .swiper-slide {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
 
-.serviceImageSwiper .swiper-slide-active {
+.serviceImageSwiper .swiper-slide-active,
+.blogImageSwiper .swiper-slide-active {
   opacity: 1;
 }
 
