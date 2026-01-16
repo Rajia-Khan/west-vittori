@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   new Swiper(".peopleSwiper", {
-    slidesPerView: 1.2,
+    slidesPerView: "auto",
     spaceBetween: 24,
     centeredSlides: false,
     pagination: {
@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true,
     },
     breakpoints: {
-      640: { slidesPerView: 2.5 },
-      1024: { slidesPerView: 4.5 },
+      640: { slidesPerView: "auto" },
+      1024: { slidesPerView: "auto" },
     },
   });
   new Swiper(".testimonialSwiper", {

@@ -31,27 +31,35 @@
 .fw-100 {
   font-weight: 100;
 }
+
 .fw-200 {
   font-weight: 200;
 }
+
 .fw-300 {
   font-weight: 300;
 }
+
 .fw-400 {
   font-weight: 400;
 }
+
 .fw-500 {
   font-weight: 500;
 }
+
 .fw-600 {
   font-weight: 600;
 }
+
 .fw-700 {
   font-weight: 700;
 }
+
 .fw-800 {
   font-weight: 800;
 }
+
 .fw-900 {
   font-weight: 900;
 }
@@ -62,12 +70,15 @@
 .text-primary {
   color: var(--color-primary);
 }
+
 .text-secondary {
   color: var(--color-secondary);
 }
+
 .text-tertiary {
   color: var(--color-tertiary);
 }
+
 .text-quaternary {
   color: var(--color-quaternary);
 }
@@ -75,12 +86,15 @@
 .bg-primary {
   background-color: var(--color-primary);
 }
+
 .bg-secondary {
   background-color: var(--color-secondary);
 }
+
 .bg-tertiary {
   background-color: var(--color-tertiary);
 }
+
 .bg-quaternary {
   background-color: var(--color-quaternary);
 }
@@ -88,6 +102,7 @@
 .border-primary {
   border-color: var(--color-primary);
 }
+
 .border-tertiary {
   border-color: var(--color-tertiary);
 }
@@ -115,19 +130,41 @@
 /* ================================
    PEOPLE SWIPER
 ================================ */
+.peopleSwiper .swiper-pagination {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 .peopleSwiper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: var(--color-quaternary);
-  opacity: 0.5;
-  margin: 0 6px !important;
+  width: 14px;
+  height: 14px;
+  background: var(--color-quaternary) !important;
+  opacity: 1;
+  margin: 0 8px !important;
+  transition: all 0.3s ease;
 }
 
 .peopleSwiper .swiper-pagination-bullet-active {
-  background: var(--color-tertiary);
-  opacity: 1;
-  width: 14px;
-  height: 14px;
+  background: var(--color-tertiary) !important;
+  width: 27px;
+  height: 27px;
+}
+
+.peopleSwiper .swiper-slide {
+  width: 280px;
+  height: 380px;
+}
+
+@media (min-width: 768px) {
+  .peopleSwiper .swiper-slide {
+    width: 360px;
+    height: 486px;
+  }
+}
+
+.peopleSwiper .swiper-slide img {
+  aspect-ratio: unset;
 }
 
 /* ================================
@@ -208,6 +245,7 @@
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
+
 .serviceImageSwiper .swiper-slide-active {
   opacity: 1;
 }
@@ -233,42 +271,43 @@
    CATEGORY SLIDER (mySwiper)
 ================================ */
 .mySwiper {
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 1) 15%,
-    rgba(0, 0, 0, 1) 85%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 1) 15%,
-    rgba(0, 0, 0, 1) 85%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 1) 15%,
+      rgba(0, 0, 0, 1) 85%,
+      rgba(0, 0, 0, 0.3) 100%);
+  -webkit-mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 1) 15%,
+      rgba(0, 0, 0, 1) 85%,
+      rgba(0, 0, 0, 0.3) 100%);
 }
 
 .mySwiper .swiper-wrapper {
   align-items: flex-end;
   padding-top: 30px;
 }
+
 .mySwiper .swiper-slide {
   transition: transform 0.35s ease, opacity 0.35s ease;
   opacity: 0.85;
 }
+
 .mySwiper .swiper-slide-active {
   transform: translateY(-26px);
   opacity: 1;
 }
+
 .category-title {
   color: var(--color-primary);
   opacity: 0.75;
   transition: opacity 0.25s ease;
 }
+
 .category-title.is-active {
   opacity: 1;
 }
+
 .category-title.is-active::after {
   content: "";
   display: block;
@@ -288,4 +327,49 @@
 .project-card:hover h3 {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
+}
+
+/* ================================
+   TESTIMONIAL SWIPER
+ ================================ */
+.testimonialSwiper {
+  padding: 60px 0 100px 0 !important;
+  /* Extra space for lifted slide and pagination gap */
+  overflow: visible !important;
+}
+
+.testimonialSwiper .swiper-pagination {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  bottom: 0 !important;
+}
+
+.testimonialSwiper .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: var(--color-quaternary) !important;
+  opacity: 1;
+  margin: 0 8px !important;
+  transition: all 0.3s ease;
+}
+
+.testimonialSwiper .swiper-pagination-bullet-active {
+  background: var(--color-tertiary) !important;
+  width: 27px;
+  height: 27px;
+}
+
+.testimonialSwiper .testimonial-card {
+  background: rgb(255, 232, 219) !important;
+  opacity: 1 !important;
+  transition: all 0.5s ease;
+}
+
+.testimonialSwiper .swiper-slide-active .testimonial-card {
+  background: var(--color-quaternary) !important;
+  transform: scale(1.1) translateY(-30px);
+  /* Lift up effect */
+  opacity: 1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }

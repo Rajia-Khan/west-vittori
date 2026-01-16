@@ -1,670 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>West+Vittori</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/font.css" />
-  </head>
-  <body class="bg-white py-4">
-    <!-- Header start -->
-    <header class="w-full">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-6 flex items-center justify-between"
-      >
-        <a
-          href="#"
-          class="font-outfit tracking-[0.25em] font-semibold text-xl md:text-2xl"
-          >WEST<span class="mx-1">+</span>VITTORI</a
-        >
-        <nav class="hidden md:flex items-center gap-8 font-outfit text-sm">
-          <a href="#" class="hover:text-black"
-            >WORKPLACES <span class="ml-1 text-neutral-400">▾</span></a
-          >
-          <a href="#" class="hover:text-black"
-            >PROJECTS <span class="ml-1 text-neutral-400">▾</span></a
-          >
-          <a href="#" class="hover:text-black">NEWS &amp; VIEWS</a>
-          <a href="#" class="hover:text-black">ABOUT US</a>
-        </nav>
-        <a
-          href="#"
-          class="inline-flex items-center bg-orange-400 hover:bg-orange-500 text-white rounded-full px-5 py-2.5 font-outfit text-sm shadow-sm"
-          >GET‑IN‑TOUCH</a
-        >
-      </div>
-    </header>
 
-    <!-- Header end -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West+Vittori</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/font.css" />
+</head>
 
-    <!-- Hero section start -->
-    <section class="bg-[#FFBD98] pt-20 pb-24">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[900px] max-w-[350px] mx-auto px-10"
-      >
-        <div class="max-w-2xl mb-12">
-          <h1
-            class="text-[#2D2D2D] font-serif text-3xl md:text-4xl leading-snug mb-8"
-          >
-            We are West & Vittori ipsum dolor sit amLorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua ut enim ad minim veniam, quis nostru.
-          </h1>
+<body class="bg-white">
+  <!-- Header start -->
 
-          <button
-            class="border border-[#2D2D2D] px-8 py-2 rounded-md font-outfit text-xs font-bold tracking-widest uppercase hover:bg-[#2D2D2D] hover:text-white transition-all"
-          >
-            Capabilities
-          </button>
+  <header class="w-full bg-[#FFBD98]">
+    <div class="hidden lg:block">
+      <div class="lg:max-w-[1600px] mx-auto px-10 py-6 flex items-center justify-between">
+        <div>
+          <a href="/pages/home.html">
+            <img src="/assets/images/LOGO.svg" alt="logo" class="w-[393.97px] h-[28px]" />
+          </a>
         </div>
-
-        <div class="w-full">
-          <img
-            src="/assets/images/about-us.png"
-            alt="Team working"
-            class="w-full rounded-[60px] object-cover h-[500px]"
-          />
+        <div class="flex gap-8 bg-white px-6 rounded-full">
+          <nav class="flex items-center gap-10 font-outfit text-sm">
+            <a href="#" class="text-[--color-primary] font-semibold text-[16.22px]">WORKPLACES</a>
+            <a href="#" class="text-[--color-primary] font-semibold text-[16.22px]">PROJECTS</a>
+            <a href="#" class="text-[--color-primary] font-semibold text-[16.22px]">NEWS & VIEWS</a>
+            <a href="/pages/about.html" class="text-[--color-primary] font-semibold text-[16.22px]">ABOUT US</a>
+          </nav>
+          <a href="#"
+            class="flex justify-center items-center bg-white text-[16.22px] font-semibold rounded-full w-[200px] h-[51px]">
+            <div class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"></div>
+            GET IN TOUCH
+          </a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Hero section end -->
+    <div class="lg:hidden flex items-center justify-between px-6 py-4 bg-[#FFBD98]">
+      <a href="/pages/home.html">
+        <img src="/assets/images/LOGO.svg" alt="logo" class="w-[150px] h-auto" />
+      </a>
 
-    <!-- Our people section start -->
-    <section class="py-20 bg-white">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
-      >
-        <div class="mb-12 max-w-2xl">
-          <h2
-            class="font-outfit font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6"
-          >
-            Our people are the difference. Every time.
-          </h2>
-          <p
-            class="font-outfit text-neutral-600 text-sm md:text-base leading-relaxed mb-8"
-          >
-            We offer a holistic approach to each project, going beyond
-            traditional office design to deliver innovative and tailored
-            solutions. Our coworking space designs are created to enhance
-            collaboration, creativity and flexibility. We seek to encompass
-            environmental, social, and economic factors alongside well-being,
-            productivity and flexible working.
+      <button id="openSidebar" class="flex flex-col gap-1.5 p-2">
+        <span class="w-7 h-0.5 bg-black"></span>
+        <span class="w-7 h-0.5 bg-black"></span>
+        <span class="w-7 h-0.5 bg-black"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="sidebarOverlay"
+    class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <div id="sidebar"
+    class="fixed top-0 right-0 w-[80%] max-w-[350px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-xl">
+    <div class="p-8 flex flex-col h-full">
+      <button id="closeSidebar" class="self-end text-3xl font-light mb-8">
+        &times;
+      </button>
+
+      <nav class="flex flex-col gap-6 text-[20px] font-semibold font-outfit">
+        <a href="#" class="border-b pb-4">WORKPLACES</a>
+        <a href="#" class="border-b pb-4">PROJECTS</a>
+        <a href="#" class="border-b pb-4">NEWS & VIEWS</a>
+        <a href="/pages/about.html" class="border-b pb-4">ABOUT US</a>
+      </nav>
+    </div>
+  </div>
+
+  <div id="sidebar"
+    class="fixed top-0 right-0 w-[300px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl">
+    <div class="p-6 flex flex-col h-full">
+      <button id="closeSidebar" class="self-end text-2xl font-bold p-2">
+        &times;
+      </button>
+
+      <nav class="flex flex-col gap-6 mt-10 font-outfit font-semibold text-[18px]">
+        <a href="#" class="text-[--color-primary] border-b pb-2">WORKPLACES</a>
+        <a href="#" class="text-[--color-primary] border-b pb-2">PROJECTS</a>
+        <a href="#" class="text-[--color-primary] border-b pb-2">NEWS & VIEWS</a>
+        <a href="/pages/about.html" class="text-[--color-primary] border-b pb-2">ABOUT US</a>
+      </nav>
+
+      <a href="#"
+        class="mt-auto flex justify-center items-center bg-[--color-quaternary] py-4 rounded-full font-outfit font-semibold">
+        <div class="w-2.5 h-2.5 rounded-full bg-black mr-2"></div>
+        GET IN TOUCH
+      </a>
+    </div>
+  </div>
+  <!-- Responsive sidebar end -->
+  <!-- Header end -->
+
+  <!-- Hero section start -->
+  <section class="bg-[#FFBD98] md:pt-20 pt-5 pb-24">
+    <div class="lg:max-w-[1600px] md:max-w-[900px] max-w-[350px] mx-auto lg:px-10 px-2">
+      <div class="lg:w-[823px] w-full mb-12">
+        <h1 class="font-platypi md:text-[29px] text-[20px] leading-relaxed mb-8 text-[#1B191A] leading-snug mb-8">
+          We are West & Vittori ipsum dolor sit amLorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua ut enim ad minim veniam, quis nostru.
+        </h1>
+
+        <button
+          class="border border-black px-6 py-2.5 rounded font-platypi text-[16px] font-bold tracking-widest uppercase hover:bg-[#2D2D2D] hover:text-white transition-all">
+          Capabilities
+        </button>
+      </div>
+
+      <div class="w-full">
+        <img src="/assets/images/about-us.png" alt="Team working"
+          class="w-full rounded-[40px] object-cover h-[500px]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero section end -->
+
+  <!-- Our people section start -->
+  <section class="py-20 bg-white">
+    <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
+      <div class="mb-12 max-w-3xl">
+        <h2 class="font-outfit font-bold md:text-[68px] text-[32px] leading-tight  mb-6">
+          Our people are the difference. Every time.
+        </h2>
+        <p class="font-platypi text-[19px]  font-normal mb-8 text-[#1B191A] lg:w-[600px] w-full">
+          We offer a holistic approach to each project, going beyond
+          traditional office design to deliver innovative and tailored
+          solutions. Our coworking space designs are created to enhance
+          collaboration, creativity and flexibility. We seek to encompass
+          environmental, social, and economic factors alongside well-being,
+          productivity and flexible working.
+        </p>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a1.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Roddy Woolgar
+            </h3>
+            <p class="font-platypi text-[20px] opacity-90 font-light text-center mt-1">Managing Director</p>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a2.png" alt="Amy Louise" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Amy Louise
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a3.png" alt="William Marshall" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              William Marshall
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a4.png" alt="Hana Rilje" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Hana Rilje
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a5.png" alt="Ché Marshall" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Ché Marshall
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a3.png" alt="William Marshall" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              William Marshall
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a1.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Roddy Woolgar
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a2.png" alt="Amy Louise" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Amy Louise
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a1.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Roddy Woolgar
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a2.png" alt="Amy Louise" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Amy Louise
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a6.png" alt="Hana Rilje" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              Hana Rilje
+            </h3>
+          </div>
+        </div>
+
+        <div class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm">
+          <img src="/assets/images/a3.png" alt="William Marshall" class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+              William Marshall
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our people section end -->
+
+  <!-- Our Capabilities start-->
+  <section class="bg-[--color-tertiary] py-20">
+    <div class="lg:max-w-[1600px] md:max-w-[1400px] max-w-[350px] mx-auto md:px-10 px-2">
+      <h2 class="font-outfit font-semibold text-[18px] mb-12">
+        Our Capabilities
+      </h2>
+
+      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5">
+          <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Analysis</h3>
+        </div>
+        <div class="lg:col-span-7 flex items-start gap-8 lg:ml-7 ml-0">
+          <p class="font-platypi md:text-[18px] text-[12px] leading-relaxed max-w-[700px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris...
           </p>
-          <a
-            href="#"
-            class="inline-block border border-black px-10 py-2.5 rounded-md font-outfit text-xs font-bold tracking-[0.2em] hover:bg-black hover:text-white transition-all uppercase"
-          >
-            About
+          <img src="/assets/images/arrow-vector.svg" alt="arrow" class="mt-2 w-5" />
+        </div>
+      </div>
+
+      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5">
+          <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Design & process</h3>
+        </div>
+        <div class="lg:col-span-7 flex items-start gap-8 lg:ml-7 ml-0">
+          <p class="font-platypi md:text-[18px] text-[12px] leading-relaxed max-w-[700px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris...
+          </p>
+          <img src="/assets/images/arrow-vector.svg" alt="arrow" class="mt-2 w-5" />
+        </div>
+      </div>
+
+      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5">
+          <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Strategy</h3>
+        </div>
+        <div class="lg:col-span-7 flex items-start gap-8 lg:ml-7 ml-0">
+          <p class="font-platypi md:text-[18px] text-[12px] leading-relaxed max-w-[700px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris...
+          </p>
+          <img src="/assets/images/arrow-vector.svg" alt="arrow" class="mt-2 w-5" />
+        </div>
+      </div>
+
+      <div class="border-t border-b border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5">
+          <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Delivery</h3>
+        </div>
+        <div class="lg:col-span-7 flex items-start gap-8 lg:ml-7 ml-0">
+          <p class="font-platypi md:text-[18px] text-[12px] leading-relaxed max-w-[700px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris...
+          </p>
+          <img src="/assets/images/arrow-vector.svg" alt="arrow" class="mt-2 w-5" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Capabilities end -->
+
+  <!-- Working with us section start -->
+  <section class="py-20 overflow-hidden bg-white">
+    <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 mb-24">
+      <h2 class="font-outfit font-bold text-3xl md:text-5xl lg:text-6xl max-w-2xl leading-tight">
+        We care that everyone enjoys the process and working with us
+      </h2>
+    </div>
+
+    <div class="swiper testimonialSwiper">
+      <div class="swiper-wrapper items-center">
+        <div class="swiper-slide">
+          <div class="testimonial-card rounded-[20px] p-10 md:p-14 text-center transition-all duration-500">
+            <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
+              I loved their ‘can-do’ attitude.
+            </h3>
+            <p class="font-outfit text-sm md:text-base leading-relaxed mb-10">
+              "Having worked with m ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea."
+            </p>
+            <span class="font-outfit font-bold text-xs tracking-widest uppercase">Head of UK + EU Imports</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card rounded-[20px] p-10 md:p-14 text-center transition-all duration-500">
+            <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
+              I loved their ‘can-do’ attitude.
+            </h3>
+            <p class="font-outfit text-sm md:text-base leading-relaxed mb-10">
+              "Having worked with m ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea."
+            </p>
+            <span class="font-outfit font-bold text-xs tracking-widest uppercase">Head of UK + EU Imports</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card rounded-[20px] p-10 md:p-14 text-center transition-all duration-500">
+            <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
+              I loved their ‘can-do’ attitude.
+            </h3>
+            <p class="font-outfit text-sm md:text-base leading-relaxed mb-10">
+              "Having worked with m ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea."
+            </p>
+            <span class="font-outfit font-bold text-xs tracking-widest uppercase">Head of UK + EU Imports</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card rounded-[20px] p-10 md:p-14 text-center transition-all duration-500">
+            <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
+              I loved their ‘can-do’ attitude.
+            </h3>
+            <p class="font-outfit text-sm md:text-base leading-relaxed mb-10">
+              "Having worked with m ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea."
+            </p>
+            <span class="font-outfit font-bold text-xs tracking-widest uppercase">Head of UK + EU Imports</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination !bottom-0 "></div>
+    </div>
+  </section>
+  <!-- Working with us section end -->
+
+  <!-- Partners section start -->
+
+  <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 py-12">
+    <marquee>
+      <div class="flex items-center justify-between gap-6">
+        <img src="/assets/images/partners.png" alt="Group" class="" />
+        <img src="/assets/images/partners2.png" alt="Group" class="  " />
+      </div>
+    </marquee>
+  </div>
+  <!-- Partners section end  -->
+
+  <!-- Footer start -->
+
+
+  <footer class="bg-[#4E4F50] text-white pt-24 pb-20 font-sans">
+    <div class="lg:max-w-[1400px]  w-full mx-auto px-8">
+
+      <div class="text-center mb-24">
+        <h2 class="text-[--color-tertiary] font-gotham font-extrabold lg:text-[60px] text-[40px] leading-tight mb-0">
+          A united vision
+        </h2>
+        <p class="font-platypi text-[16px] lg:text-[33px] text-white opacity-90">
+          Creating purposeful workplaces.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-28">
+        <div class="md:col-span-6 lg:col-span-7 flex flex-col">
+          <h4 class="text-[--color-tertiary] font-semibold text-[17px] tracking-widest uppercase mb-10">
+            UK HEADQUARTERS
+          </h4>
+          <div class="mb-8">
+            <a href="mailto:hello@westandvittori.com"
+              class="block font-platypi lg:text-[30px] text-[20px] hover:text-[--color-tertiary] transition-colors mb-2 leading-tight">
+              hello@westandvittori.com 0203 772 4551
+            </a>
+
+          </div>
+          <address class="not-italic text-[15px] leading-relaxed opacity-90">
+            <strong class="block mb-1 text-white font-bold">West+Vittori</strong>
+            15 Long Lane<br />
+            Barbican<br />
+            London<br />
+            EC1A 9PN
+          </address>
+        </div>
+
+        <div class="md:col-span-3 lg:col-span-3 flex flex-col">
+          <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
+            WORKPLACES
+          </h4>
+          <ul class="space-y-4 text-[15px] opacity-90">
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Landlord & Assets Managers</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Occupiers & Tenants</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Logistics & Warehousing</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Co-working & Serviced Offices</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3 lg:col-span-2 flex flex-col">
+          <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
+            COMPANY
+          </h4>
+          <ul class="space-y-4 text-[15px] opacity-90">
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Projects</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">News & Views</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-end gap-10">
+        <div class="space-y-8">
+          <h3 class="font-serif text-[36px] text-[#4CC0CD] leading-tight">
+            Ideas that shape smarter workplaces
+          </h3>
+          <a href="#"
+            class="inline-block border border-[#4CC0CD] px-10 py-3 rounded-[4px] font-bold text-[12px] tracking-[0.2em] uppercase text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all">
+            SUBSCRIBE
           </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a1.png"
-              alt="Roddy Woolgar"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Roddy Woolgar
-              </h3>
-              <p class="text-[10px] opacity-80 mt-1">Managing Director</p>
-            </div>
-          </div>
+        <div class="flex gap-3">
+          <img src="/assets/images/instagram.png" class="cursor-pointer" />
+          <img src="/assets/images/fb.png" class="cursor-pointer" />
+          <img src="/assets/images/youtube.png" class="cursor-pointer" />
 
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a2.png"
-              alt="Amy Louise"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Amy Louise
-              </h3>
-            </div>
-          </div>
+          <img src="/assets/images/x.png" class="cursor-pointer" />
+          <img src="/assets/images/linkedin.png" class="cursor-pointer" />
 
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a3.png"
-              alt="William Marshall"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                William Marshall
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a4.png"
-              alt="Hana Rilje"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Hana Rilje
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a5.png"
-              alt="Ché Marshall"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Ché Marshall
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a3.png"
-              alt="William Marshall"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                William Marshall
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a1.png"
-              alt="Roddy Woolgar"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Roddy Woolgar
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a2.png"
-              alt="Amy Louise"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Amy Louise
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a1.png"
-              alt="Roddy Woolgar"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Roddy Woolgar
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a2.png"
-              alt="Amy Louise"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Amy Louise
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a6.png"
-              alt="Hana Rilje"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                Hana Rilje
-              </h3>
-            </div>
-          </div>
-
-          <div
-            class="relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm"
-          >
-            <img
-              src="/assets/images/a3.png"
-              alt="William Marshall"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white"
-            >
-              <h3 class="font-outfit font-bold text-xl leading-none">
-                William Marshall
-              </h3>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
-    <!-- Our people section end -->
-
-    <!-- Our Capabilities start-->
-    <section class="bg-[--color-tertiary] py-20 font-outfit">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[900px] max-w-[350px] mx-auto px-10"
-      >
-        <h2 class="font-bold text-sm uppercase tracking-widest mb-12">
-          Our Capabilities
-        </h2>
-
-        <div
-          class="border-t border-black/20 py-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-start"
-        >
-          <h3 class="md:col-span-4 text-4xl font-bold">Analysis</h3>
-          <p class="md:col-span-7 text-sm leading-relaxed max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris...
-          </p>
-          <div class="md:col-span-1 flex justify-end">
-            <img src="/assets/images/arrow-vector.svg" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="border-t border-black/20 py-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-start"
-        >
-          <h3 class="md:col-span-4 text-4xl font-bold">Design & process</h3>
-          <p class="md:col-span-7 text-sm leading-relaxed max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris...
-          </p>
-          <div class="md:col-span-1 flex justify-end">
-            <img src="/assets/images/arrow-vector.svg" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="border-t border-black/20 py-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-start"
-        >
-          <h3 class="md:col-span-4 text-4xl font-bold">Strategy</h3>
-          <p class="md:col-span-7 text-sm leading-relaxed max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris...
-          </p>
-          <div class="md:col-span-1 flex justify-end">
-            <img src="/assets/images/arrow-vector.svg" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="border-t border-b border-black/20 py-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-start"
-        >
-          <h3 class="md:col-span-4 text-4xl font-bold">Delivery</h3>
-          <p class="md:col-span-7 text-sm leading-relaxed max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris...
-          </p>
-          <div class="md:col-span-1 flex justify-end">
-            <img src="/assets/images/arrow-vector.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Our Capabilities end -->
-
-    <!-- Working with us section start -->
-    <section class="py-20 overflow-hidden bg-white">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 mb-12"
-      >
-        <h2
-          class="font-outfit font-bold text-4xl md:text-5xl lg:text-6xl max-w-2xl leading-tight"
-        >
-          We care that everyone enjoys the process and working with us
-        </h2>
-      </div>
-
-      <div class="swiper testimonialSwiper pb-16">
-        <div class="swiper-wrapper items-center">
-          <div class="swiper-slide">
-            <div
-              class="testimonial-card bg-[#FFF0E5] rounded-[40px] p-10 md:p-14 text-center transition-all duration-500"
-            >
-              <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
-                I loved their ‘can-do’ attitude.
-              </h3>
-              <p
-                class="font-outfit text-sm md:text-base leading-relaxed mb-10 opacity-80"
-              >
-                "Having worked with m ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea."
-              </p>
-              <span
-                class="font-outfit font-bold text-xs tracking-widest uppercase"
-                >Head of UK + EU Imports</span
-              >
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div
-              class="testimonial-card bg-[#FFB38E] rounded-[40px] p-10 md:p-14 text-center transition-all duration-500"
-            >
-              <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
-                I loved their ‘can-do’ attitude.
-              </h3>
-              <p
-                class="font-outfit text-sm md:text-base leading-relaxed mb-10 opacity-80"
-              >
-                "Having worked with m ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea."
-              </p>
-              <span
-                class="font-outfit font-bold text-xs tracking-widest uppercase"
-                >Head of UK + EU Imports</span
-              >
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="testimonial-card bg-[#FFF0E5] rounded-[40px] p-10 md:p-14 text-center transition-all duration-500"
-            >
-              <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
-                I loved their ‘can-do’ attitude.
-              </h3>
-              <p
-                class="font-outfit text-sm md:text-base leading-relaxed mb-10 opacity-80"
-              >
-                "Having worked with m ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea."
-              </p>
-              <span
-                class="font-outfit font-bold text-xs tracking-widest uppercase"
-                >Head of UK + EU Imports</span
-              >
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="testimonial-card bg-[#FFF0E5] rounded-[40px] p-10 md:p-14 text-center transition-all duration-500"
-            >
-              <h3 class="font-outfit font-bold text-2xl md:text-3xl mb-8">
-                I loved their ‘can-do’ attitude.
-              </h3>
-              <p
-                class="font-outfit text-sm md:text-base leading-relaxed mb-10 opacity-80"
-              >
-                "Having worked with m ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea."
-              </p>
-              <span
-                class="font-outfit font-bold text-xs tracking-widest uppercase"
-                >Head of UK + EU Imports</span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination !bottom-0"></div>
-      </div>
-    </section>
-    <!-- Working with us section end -->
-
-    <!-- Partners section start -->
-
-    <div
-      class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6 py-12"
-    >
-      <marquee>
-        <div class="flex items-center justify-between gap-6">
-          <img src="/assets/images/partners.png" alt="Group" class="" />
-          <img src="/assets/images/partners2.png" alt="Group" class="  " />
-        </div>
-      </marquee>
     </div>
-    <!-- Partners section end  -->
+  </footer>
 
-    <!-- Footer start -->
-    <footer class="bg-[#4D4D4D] text-white pt-20 pb-10 font-outfit">
-      <div
-        class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto px-6"
-      >
-        <div class="text-center mb-24">
-          <h2 class="text-[#4CC0CD] font-bold text-5xl md:text-6xl mb-4">
-            A united vision
-          </h2>
-          <p class="font-platypi text-2xl md:text-3xl opacity-90 italic">
-            Creating purposeful workplaces.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-          <div>
-            <h4
-              class="text-[#4CC0CD] font-bold text-sm tracking-widest uppercase mb-8"
-            >
-              UK Headquarters
-            </h4>
-            <div class="space-y-2 mb-8">
-              <a
-                href="mailto:hello@westandvittori.com"
-                class="block font-platypi text-2xl hover:text-[#4CC0CD] transition-colors"
-                >hello@westandvittori.com</a
-              >
-              <p class="font-platypi text-2xl">0203 772 4551</p>
-            </div>
-            <address
-              class="not-italic font-outfit text-sm leading-relaxed opacity-80"
-            >
-              <strong class="block mb-1">West+Vittori</strong>
-              15 Long Lane<br />
-              Barbican<br />
-              London<br />EC1A 9PN
-            </address>
-          </div>
-
-          <div>
-            <h4
-              class="text-[#4CC0CD] font-bold text-sm tracking-widest uppercase mb-8"
-            >
-              Workplaces
-            </h4>
-            <ul class="space-y-4 font-outfit text-sm opacity-80">
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Landlord & Assets Managers</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Occupiers & Tenants</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Logistics & Warehousing</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Co-working & Serviced Offices</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4
-              class="text-[#4CC0CD] font-bold text-sm tracking-widest uppercase mb-8"
-            >
-              Company
-            </h4>
-            <ul class="space-y-4 font-outfit text-sm opacity-80">
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >News & Views</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#4CC0CD] transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-12 mb-8 gap-8"
-        >
-          <div class="space-y-6">
-            <h3 class="font-platypi text-3xl text-[#4CC0CD] italic">
-              Ideas that shape smarter workplaces
-            </h3>
-            <button
-              class="border border-[#4CC0CD] px-10 py-3 rounded-md font-bold text-xs tracking-widest uppercase hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all"
-            >
-              Subscribe
-            </button>
-          </div>
-
-          <div class="flex gap-4">
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-x-twitter"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 border border-[#4CC0CD] rounded-full flex items-center justify-center text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-white transition-all"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col md:flex-row justify-between items-center text-[10px] opacity-60 tracking-wider font-outfit uppercase"
-        >
-          <div class="flex gap-4">
-            <span>© 2025 West and Vittori Ltd.</span>
-            <a href="#" class="hover:underline">Privacy Policy</a>
-          </div>
-          <div>Web Design & Build by <span class="font-bold">6rs</span></div>
-        </div>
+  <div class="bg-white py-6 border-t border-gray-100">
+    <div
+      class="max-w-[1400px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center text-[11px] uppercase tracking-widest text-black">
+      <div class="flex gap-6">
+        <span class="opacity-70">© 2025 West and Vittori Ltd.</span>
+        <a href="#" class="hover:underline">Privacy Policy</a>
       </div>
-    </footer>
-    <!-- Footer end  -->
+      <div class="mt-4 md:mt-0 opacity-70">
+        Web Design & Build by <span class="font-bold">6rs</span>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="/script.js"></script>
-  </body>
+  <!-- Footer end  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="/script.js"></script>
+</body>
+
 </html>
