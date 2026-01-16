@@ -271,18 +271,25 @@
 /* ================================
    PROJECT HERO SWIPER
 ================================ */
+.project-pagination {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: var(--color-quaternary);
+  width: 14px;
+  height: 14px;
+  background: var(--color-quaternary) !important;
   opacity: 1;
-  margin: 0 6px !important;
+  margin: 0 8px !important;
   transition: all 0.3s ease;
 }
 
 .project-pagination .swiper-pagination-bullet-active {
-  background: var(--color-tertiary);
-  transform: scale(1.1);
+  background: var(--color-tertiary) !important;
+  width: 27px;
+  height: 27px;
 }
 
 /* ================================

@@ -155,34 +155,47 @@
   <!-- Hero section start -->
   <section class="py-4">
     <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
-      <div class="swiper projectHeroSwiper rounded-[40px] overflow-hidden relative">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide relative">
-            <img src="/assets/images/service-office.png" alt="Hero" class="w-full h-[629px] object-cover" />
-            <div
-              class="absolute inset-0 flex flex-col items-center md:justify-end justify-center mb-[72px] text-center text-white px-6 bg-black/20">
-              <span class="font-platypi text-[30px] md:text-2xl mb-3 fw-300">Logistics &amp; Warehousing</span>
-              <h1
-                class="font-outfit fw-800 md:font-bold md:text-[68px] text-[24px] lg:w-[875px] w-full md:leading-[79.5px] leading-normal">
-                Smart warehousing for modern supply chains
-              </h1>
+      <div class="relative">
+        <div class="swiper projectHeroSwiper rounded-[40px] overflow-hidden relative">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide relative">
+              <img src="/assets/images/service-office.png" alt="Hero" class="w-full h-[629px] object-cover" />
+              <!-- Badge -->
+              <div class="absolute top-8 right-8 z-10">
+                <span
+                  class="border border-white/50 text-white px-6 py-2 rounded-full text-[13px] font-outfit backdrop-blur-sm">Featured
+                  Project</span>
+              </div>
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-end pb-20 text-center text-white px-6 bg-black/20">
+                <span class="font-platypi text-[24px] md:text-[32px] mb-2 fw-300">Co-working & Serviced Offices</span>
+                <h1 class="font-gotham font-extrabold text-[48px] md:text-[80px] leading-tight">
+                  Menier
+                </h1>
+              </div>
             </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide relative">
-            <img src="/assets/images/service-office-2.png" alt="Hero" class="w-full h-[629px] object-cover" />
-            <div
-              class="absolute inset-0 flex flex-col items-center justify-end mb-[72px] text-center text-white px-6 bg-black/20">
-              <span class="font-platypi text-[30px] md:text-2xl mb-3 fw-300">Logistics &amp; Warehousing</span>
-              <h1
-                class="font-outfit fw-800 md:font-bold md:text-[68px] text-[24px] lg:w-[875px] w-full md:leading-[79.5px] leading-normal">
-                Smart warehousing for modern supply chains
-              </h1>
+            <!-- Slide 2 -->
+            <div class="swiper-slide relative">
+              <img src="/assets/images/service-office-2.png" alt="Hero" class="w-full h-[629px] object-cover" />
+              <!-- Badge -->
+              <div class="absolute top-8 right-8 z-10">
+                <span
+                  class="border border-white/50 text-white px-6 py-2 rounded-full text-[13px] font-outfit backdrop-blur-sm">Featured
+                  Project</span>
+              </div>
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-end pb-20 text-center text-white px-6 bg-black/20">
+                <span class="font-platypi text-[24px] md:text-[32px] mb-2 fw-300">Logistics &amp; Warehousing</span>
+                <h1 class="font-gotham font-extrabold text-[48px] md:text-[80px] leading-tight">
+                  Smart warehousing
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination !static mt-10"></div>
+        <!-- Pagination - Moved outside of Swiper div -->
+        <div class="swiper-pagination project-pagination !static mt-10"></div>
       </div>
     </div>
   </section>
@@ -192,25 +205,25 @@
   <section class="py-20 bg-white">
     <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
       <div class="flex flex-wrap items-center justify-center gap-3 mb-16">
-        <span class="font-outfit font-bold text-[10px] uppercase tracking-widest mr-4">Sort By</span>
+        <span class="font-outfit font-bold text-[16px] uppercase tracking-widest mr-4">Sort By</span>
         <button onclick="filterProjects('all', this)"
-          class="filter-btn active bg-black text-white px-6 py-2 rounded-full text-[11px] font-bold uppercase transition-all duration-300">
+          class="filter-btn active bg-black text-white px-6 py-2 rounded-full text-[18px] font-bold text-[18px] font-outfit uppercase transition-all duration-300">
           All
         </button>
         <button onclick="filterProjects('landlords', this)"
-          class="filter-btn bg-[#FFB38E]/30 text-black px-6 py-2 rounded-full text-[11px] font-bold uppercase transition-all duration-300 hover:bg-[#FFB38E]">
+          class="filter-btn bg-[#FFBD98] text-black px-6 py-2 rounded-full text-[11px] font-bold text-[18px] font-outfit uppercase transition-all duration-300 hover:bg-[#FFB38E]">
           Landlords & Asset Managers
         </button>
         <button onclick="filterProjects('occupiers', this)"
-          class="filter-btn bg-[#FFB38E]/30 text-black px-6 py-2 rounded-full text-[11px] font-bold uppercase transition-all duration-300 hover:bg-[#FFB38E]">
+          class="filter-btn bg-[#FFBD98] text-black px-6 py-2 rounded-full text-[11px] font-bold text-[18px] font-outfit uppercase transition-all duration-300 hover:bg-[#FFB38E]">
           Occupiers & Tenants
         </button>
         <button onclick="filterProjects('logistics', this)"
-          class="filter-btn bg-[#FFB38E]/30 text-black px-6 py-2 rounded-full text-[11px] font-bold uppercase transition-all duration-300 hover:bg-[#FFB38E]">
+          class="filter-btn bg-[#FFBD98] text-black px-6 py-2 rounded-full text-[11px] font-bold text-[18px] font-outfit uppercase transition-all duration-300 hover:bg-[#FFB38E]">
           Logistics & Warehousing
         </button>
         <button onclick="filterProjects('coworking', this)"
-          class="filter-btn bg-[#FFB38E]/30 text-black px-6 py-2 rounded-full text-[11px] font-bold uppercase transition-all duration-300 hover:bg-[#FFB38E]">
+          class="filter-btn bg-[#FFBD98] text-black px-6 py-2 rounded-full text-[11px] font-bold text-[18px] font-outfit uppercase transition-all duration-300 hover:bg-[#FFB38E]">
           Co-working & Serviced Offices
         </button>
       </div>
@@ -221,8 +234,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Occupiers & Tenants</span>
-            <h3 class="font-outfit font-bold text-5xl">Trimline</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">Trimline
+            </h3>
           </div>
         </div>
 
@@ -231,8 +245,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Occupiers & Tenants</span>
-            <h3 class="font-outfit font-bold text-5xl">InfoSum</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">InfoSum
+            </h3>
           </div>
         </div>
 
@@ -241,8 +256,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Co-working & Serviced Offices</span>
-            <h3 class="font-outfit font-bold text-5xl">Slingsby Place</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Co-working & Serviced Offices</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">Slingsby
+              Place</h3>
           </div>
         </div>
 
@@ -251,8 +267,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Landlords & Asset Managers</span>
-            <h3 class="font-outfit font-bold text-5xl">Crown House</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Landlords & Asset Managers</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">Crown
+              House</h3>
           </div>
         </div>
 
@@ -261,8 +278,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Co-working & Serviced Offices</span>
-            <h3 class="font-outfit font-bold text-5xl">Kings Cross</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Co-working & Serviced Offices</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">Kings
+              Cross</h3>
           </div>
         </div>
 
@@ -271,8 +289,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Occupiers & Tenants</span>
-            <h3 class="font-outfit font-bold text-5xl">Acteon</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">Acteon
+            </h3>
           </div>
         </div>
 
@@ -281,8 +300,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Occupiers & Tenants</span>
-            <h3 class="font-outfit font-bold text-5xl">Trimline</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">Trimline
+            </h3>
           </div>
         </div>
 
@@ -291,8 +311,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Occupiers & Tenants</span>
-            <h3 class="font-outfit font-bold text-5xl">InfoSum</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">InfoSum
+            </h3>
           </div>
         </div>
 
@@ -301,8 +322,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-12 text-center text-white">
-            <span class="font-platypi italic text-lg mb-2 opacity-90">Co-working & Serviced Offices</span>
-            <h3 class="font-outfit font-bold text-5xl">Slingsby Place</h3>
+            <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Co-working & Serviced Offices</span>
+            <h3 class="ont-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px]">Slingsby
+              Place</h3>
           </div>
         </div>
       </div>
