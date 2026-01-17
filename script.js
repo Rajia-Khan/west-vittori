@@ -250,3 +250,84 @@ function toggleMobileDropdown(id) {
     dropdown.classList.toggle("hidden");
   }
 }
+
+/* ================================
+   MODAL LOGIC
+================================ */
+
+// Function to handle modal opening
+async function openModal(modalId, contentId, url) {
+  const modal = document.getElementById(modalId);
+  const contentContainer = document.getElementById(contentId);
+
+  if (!modal || !contentContainer) return;
+
+  try {
+    const response = await fetch(url);
+    const html = await response.text();
+
+    // Extract everything inside <body>...</body> and also get classes from <body> tag
+    const bodyMatch = html.match(/<body([^>]*)>([\s\S.]*)<\/body>/i);
+
+    if (bodyMatch) {
+      const bodyAttrs = bodyMatch[1];
+      const bodyContent = bodyMatch[2];
+
+      // Extract classes from the body tag of the source file
+      const classMatch = bodyAttrs.match(/class="([^"]*)"/i);
+      if (classMatch) {
+        // Apply classes to container while preserving 'modal-container'
+        contentContainer.className = 'modal-container ' + classMatch[1];
+      }
+
+      contentContainer.innerHTML = bodyContent;
+    } else {
+      contentContainer.innerHTML = html;
+    }
+
+    modal.classList.add('active');
+    document.body.classList.add('modal-open');
+
+    // Add event listener to the "CLOSE" button inside the modal
+    // Match buttons linking to project.html (for projects) or about.html (for team)
+    const closeBtn = contentContainer.querySelector('a[href*="project.html"], a[href*="about.html"]');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeModal(modalId);
+      });
+    }
+
+    // Also allow clicking overlay to close
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal(modalId);
+    });
+
+  } catch (error) {
+    console.error('Error loading modal content:', error);
+  }
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.classList.remove('modal-open');
+  }
+}
+
+// Attach listeners for Project Modal
+document.querySelectorAll('.project-card').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', () => {
+    openModal('projectModal', 'projectModalContent', '/project-open.html');
+  });
+});
+
+// Attach listeners for Team Modal
+document.querySelectorAll('.team-card').forEach(card => {
+  card.addEventListener('click', () => {
+    openModal('teamModal', 'teamModalContent', '/team-open.html');
+  });
+});
+
