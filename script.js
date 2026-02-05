@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: "auto",
     spaceBetween: 24,
     centeredSlides: false,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -190,6 +195,21 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+
+  // Attach listeners for Project Modal
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', () => {
+      openModal('projectModal', 'projectModalContent', '/project-open.html');
+    });
+  });
+
+  // Attach listeners for Team Modal
+  document.querySelectorAll('.team-card').forEach(card => {
+    card.addEventListener('click', () => {
+      openModal('teamModal', 'teamModalContent', '/team-open.html');
+    });
+  });
 });
 
 //Tabs
@@ -316,18 +336,5 @@ function closeModal(modalId) {
   }
 }
 
-// Attach listeners for Project Modal
-document.querySelectorAll('.project-card').forEach(card => {
-  card.style.cursor = 'pointer';
-  card.addEventListener('click', () => {
-    openModal('projectModal', 'projectModalContent', '/project-open.html');
-  });
-});
 
-// Attach listeners for Team Modal
-document.querySelectorAll('.team-card').forEach(card => {
-  card.addEventListener('click', () => {
-    openModal('teamModal', 'teamModalContent', '/team-open.html');
-  });
-});
 

@@ -138,21 +138,37 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  height: 30px;
+  /* Anchor height to prevent layout shift */
 }
 
 .peopleSwiper .swiper-pagination-bullet {
+  width: 27px;
+  height: 27px;
+  background: transparent !important;
+  opacity: 1;
+  margin: 0 6px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.peopleSwiper .swiper-pagination-bullet::before {
+  content: "";
+  display: block;
   width: 14px;
   height: 14px;
-  background: var(--color-quaternary) !important;
-  opacity: 1;
-  margin: 0 8px !important;
+  border-radius: 50%;
+  background: var(--color-quaternary);
   transition: all 0.3s ease;
 }
 
-.peopleSwiper .swiper-pagination-bullet-active {
-  background: var(--color-tertiary) !important;
+.peopleSwiper .swiper-pagination-bullet-active::before {
   width: 27px;
   height: 27px;
+  background: var(--color-tertiary);
 }
 
 .peopleSwiper .swiper-slide {
@@ -220,42 +236,72 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  height: 30px;
+  /* Anchor height to prevent layout shift */
 }
 
 .service-pagination .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  background: var(--color-quaternary) !important;
+  width: 27px;
+  height: 27px;
+  background: transparent !important;
   opacity: 1;
-  margin: 0 8px !important;
+  margin: 0 6px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
-.service-pagination .swiper-pagination-bullet-active {
-  background: var(--color-tertiary) !important;
+.service-pagination .swiper-pagination-bullet::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-quaternary);
+  transition: all 0.3s ease;
+}
+
+.service-pagination .swiper-pagination-bullet-active::before {
   width: 27px;
   height: 27px;
+  background: var(--color-tertiary);
 }
 
 .blog-pagination {
   display: flex !important;
   align-items: center;
   justify-content: flex-start;
+  height: 30px;
+  /* Anchor height to prevent layout shift */
 }
 
 .blog-pagination .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  background: var(--color-quaternary) !important;
+  width: 27px;
+  height: 27px;
+  background: transparent !important;
   opacity: 1;
-  margin: 0 8px !important;
+  margin: 0 6px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
-.blog-pagination .swiper-pagination-bullet-active {
-  background: white !important;
+.blog-pagination .swiper-pagination-bullet::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-quaternary);
+  transition: all 0.3s ease;
+}
+
+.blog-pagination .swiper-pagination-bullet-active::before {
   width: 27px;
   height: 27px;
+  background: white;
 }
 
 /* Service Image Swiper Opacity */
@@ -277,21 +323,36 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  height: 40px;
+  /* Anchor height to prevent layout shift */
 }
 
 .project-pagination .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  background: var(--color-quaternary) !important;
+  width: 27px;
+  height: 27px;
+  background: transparent !important;
   opacity: 1;
-  margin: 0 8px !important;
+  margin: 0 6px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
-.project-pagination .swiper-pagination-bullet-active {
-  background: var(--color-tertiary) !important;
+.project-pagination .swiper-pagination-bullet::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-quaternary);
+  transition: all 0.3s ease;
+}
+
+.project-pagination .swiper-pagination-bullet-active::before {
   width: 27px;
   height: 27px;
+  background: var(--color-tertiary);
 }
 
 /* ================================
@@ -441,4 +502,10 @@
 
 body.modal-open {
   overflow: hidden;
+}
+
+
+
+.swiper {
+  overflow: visible !important;
 }
