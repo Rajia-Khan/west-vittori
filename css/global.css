@@ -377,16 +377,7 @@ body {
    CATEGORY SLIDER (mySwiper)
 ================================ */
 .mySwiper {
-  mask-image: linear-gradient(to right,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 1) 15%,
-      rgba(0, 0, 0, 1) 85%,
-      rgba(0, 0, 0, 0.3) 100%);
-  -webkit-mask-image: linear-gradient(to right,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 1) 15%,
-      rgba(0, 0, 0, 1) 85%,
-      rgba(0, 0, 0, 0.3) 100%);
+ 
 }
 
 .mySwiper .swiper-wrapper {
@@ -522,8 +513,7 @@ body.modal-open {
 /* Specific swipers that need visible overflow for pagination or effects */
 .peopleSwiper,
 .testimonialSwiper,
-.mySwiper,
-.projectHeroSwiper {
+.mySwiper {
   overflow: visible !important;
 }
 
