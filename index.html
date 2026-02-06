@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="bg-white">
+<body class="bg-white overflow-x-hidden">
     <header class="w-full">
         <div class="hidden lg:block">
             <div class="lg:max-w-[1600px] mx-auto px-10 py-6 flex items-center justify-between">
@@ -170,7 +170,8 @@
 
                 <div
                     class="absolute inset-0 flex flex-col items-center md:justify-end justify-center md:mb-[70px] mb-0 text-center text-white px-6">
-                    <span class="font-platypi lg:text-[30px] md:text-2xl text-[16px] leading-[30px] !font-[300] mb-5">Logistics
+                    <span
+                        class="font-platypi lg:text-[30px] md:text-2xl text-[16px] leading-[30px] !font-[300] mb-5">Logistics
                         &amp;
                         Warehousing</span>
                     <h1
@@ -185,7 +186,7 @@
     <!-- Hero section end -->
 
     <!-- mask group start -->
-    <section class="py-4 overflow-hidden">
+    <section id="mask-group" class="py-4 overflow-hidden">
         <div class="relative lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
             <img src="/assets/images/left-arrow.svg"
                 class="mySwiper-next absolute right-0 top-1/2 w-[68.44px] h-[35px] md:block hidden transform -translate-y-1/2 z-10 cursor-pointer" />
@@ -265,33 +266,56 @@
     <!-- mask group end  -->
 
     <!-- Work places start -->
-    <div class="bg-[--color-tertiary] h-[441px] mt-12">
-        <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 py-12">
-            <p class="text-black text-[21px] font-outfit fw-700 text-center py-6">
-                Global Expertise. Many Workplaces.
+    <div id="workplaces-scroll-section"
+        class="bg-[--color-tertiary] h-[441px] mt-12 overflow-hidden flex flex-col justify-center">
+        <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 ">
+            <p class="text-black text-[21px] font-outfit fw-700 text-center">
+                Global Expertise. Many Workplaces.
             </p>
-            <marquee direction="left" scrollamount="10">
-                <div class="flex items-center justify-between gap-6">
-                    <img src="/assets/images/partners.png" alt="Group" />
-                    <img src="/assets/images/partners2.png" alt="Group" />
-                </div>
-            </marquee>
 
-            <marquee direction="right" scrollamount="10">
-                <div class="flex items-center justify-between gap-6 mt-5">
-                    <img src="/assets/images/partners3.png" alt="Group" />
-                    <img src="/assets/images/partners.png" alt="Group" />
+            <div class="relative w-full overflow-hidden mt-20">
+                <div id="scroll-row-1"
+                    class="flex whitespace-nowrap gap-12 mb-10 transition-transform duration-700 ease-out will-change-transform">
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners2.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners2.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners2.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners2.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners2.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners2.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
                 </div>
-            </marquee>
+
+                <div id="scroll-row-2"
+                    class="flex whitespace-nowrap gap-12 transition-transform duration-700 ease-out will-change-transform"
+                    style="transform: translateX(-200px);">
+                    <img src="/assets/images/partners3.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners3.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners3.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners3.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners3.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners3.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                    <img src="/assets/images/partners.png" alt="Group" class="h-12 md:h-16 flex-shrink-0" />
+                </div>
+            </div>
         </div>
     </div>
     <!-- Work places end -->
 
     <!-- About start -->
-    <section class="py-20 overflow-hidden">
-        <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
-            <div class="mb-12">
-                <img src="/assets/images/logo_v2.png" alt="W Logo" class="w-[65px] h-[40px] mb-6" />
+    <section class="pt-20">
+        <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto ">
+            <div class="mb-12 md:px-12 px-3">
+                <img src="/assets/images/WV.svg" alt="W Logo" class="w-[65px] h-[40px] mb-6" />
                 <div class="">
                     <h2
                         class="font-outfit font-extrabold md:text-[68px] text-[32px] lg:max-w-3xl max-w-full leading-tight">
@@ -306,77 +330,119 @@
                 </div>
             </div>
 
-            <div class="swiper peopleSwiper">
+            <div class="swiper peopleSwiper ">
                 <div class="swiper-wrapper">
-                      <div class="swiper-slide">
+                    <div class="swiper-slide cursor-pointer team-card">
                         <div class="relative group rounded-[40px] overflow-hidden h-full">
-                            <img src="/assets/images/a0.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+                            <img src="/assets/images/a0.png" alt="Ché Marshall"
+                                class="w-[360px] h-[486px] object-cover" />
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 class="font-gotham font-extrabold text-[32px] text-center">Ché Marshall</h3>
-                               
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white transition-all duration-500">
+                                <h3
+                                    class="font-gotham font-extrabold text-[32px] text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    Ché Marshall</h3>
+                                <p
+                                    class="font-platypi text-[20px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+                                    Project Director
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide cursor-pointer team-card">
                         <div class="relative group rounded-[40px] overflow-hidden h-full">
-                            <img src="/assets/images/a1.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+                            <img src="/assets/images/a1.png" alt="Roddy Woolgar"
+                                class="w-[360px] h-[486px] object-cover" />
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 class="font-gotham font-extrabold text-[32px] text-center">Roddy Woolgar</h3>
-                                <p class="font-platypi text-[20px] opacity-90 font-light text-center">
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white transition-all duration-500">
+                                <h3
+                                    class="font-gotham font-extrabold text-[32px] text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    Roddy Woolgar</h3>
+                                <p
+                                    class="font-platypi text-[20px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
                                     Managing Director
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide cursor-pointer team-card">
                         <div class="relative group rounded-[40px] overflow-hidden h-full">
-                            <img src="/assets/images/a2.png" alt="Amy Louise" class="w-full h-full object-cover" />
+                            <img src="/assets/images/a2.png" alt="Amy Louise"
+                                class="w-[360px] h-[486px] object-cover" />
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 class="font-gotham font-extrabold text-[32px] text-center">Amy Louise</h3>
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white transition-all duration-500">
+                                <h3
+                                    class="font-gotham font-extrabold text-[32px] text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    Amy Louise</h3>
+                                <p
+                                    class="font-platypi text-[20px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+                                    Creative Director
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide cursor-pointer team-card">
                         <div class="relative group rounded-[40px] overflow-hidden h-full">
                             <img src="/assets/images/a3.png" alt="William Marshall"
-                                class="w-full h-full object-cover" />
+                                class="w-[360px] h-[486px] object-cover" />
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 class="font-gotham font-extrabold text-[32px] text-center">
-                                    William Marshall
-                                </h3>
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white transition-all duration-500">
+                                <h3
+                                    class="font-gotham font-extrabold text-[32px] text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    William Marshall</h3>
+                                <p
+                                    class="font-platypi text-[20px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+                                    Founding Director
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide cursor-pointer team-card">
                         <div class="relative group rounded-[40px] overflow-hidden h-full">
-                            <img src="/assets/images/a4.png" alt="Hana Ril" class="w-full h-full object-cover" />
+                            <img src="/assets/images/a4.png" alt="Hana Rilje"
+                                class="w-[360px] h-[486px] object-cover" />
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 class="font-gotham font-extrabold text-[32px] text-center">Hana Ril</h3>
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white transition-all duration-500">
+                                <h3
+                                    class="font-gotham font-extrabold text-[32px] text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    Hana Rilje</h3>
+                                <p
+                                    class="font-platypi text-[20px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+                                    Operations Manager
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide cursor-pointer team-card">
                         <div class="relative group rounded-[40px] overflow-hidden h-full">
-                            <img src="/assets/images/a5.png" alt="Hana Ril" class="w-full h-full object-cover" />
+                            <img src="/assets/images/a5.png" alt="Ché Marshall"
+                                class="w-[360px] h-[486px] object-cover" />
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 class="font-gotham font-extrabold text-[32px] text-center">Hana Ril</h3>
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white transition-all duration-500">
+                                <h3
+                                    class="font-gotham font-extrabold text-[32px] text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    Ché Marshall</h3>
+                                <p
+                                    class="font-platypi text-[20px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+                                    Project Director
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide cursor-pointer team-card">
                         <div class="relative group rounded-[40px] overflow-hidden h-full">
-                            <img src="/assets/images/a6.png" alt="Hana Ril" class="w-full h-full object-cover" />
+                            <img src="/assets/images/a6.png" alt="Hana Rilje"
+                                class="w-[360px] h-[486px] object-cover" />
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 class="font-gotham font-extrabold text-[32px] text-center">Hana Ril</h3>
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white transition-all duration-500">
+                                <h3
+                                    class="font-gotham font-extrabold text-[32px] text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                    Hana Rilje</h3>
+                                <p
+                                    class="font-platypi text-[20px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+                                    Operations Manager
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -389,31 +455,30 @@
     <!-- About end  -->
 
     <!-- Product section start -->
-    <section class="lg:max-w-[1510px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 py-12">
+    <section class="lg:max-w-[1510px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 ">
         <div class="md:py-20 py-0">
 
             <div class="text-center mb-12">
                 <h2 class="font-outfit fw-800 text-3xl md:text-[40px] max-w-3xl mx-auto leading-tight mb-4">
                     High-impact spaces for industry leaders, landlords, and tenants
                 </h2>
-                <p class="font-platypi text-black max-w-2xl mx-auto text-sm md:text-[19px] mb-8">
+                <p class="font-platypi text-black max-w-2xl mx-auto text-sm md:text-[19px] mb-12 leading-[26px]">
                     We design, build asit amet, consectetur adipiscilore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ormance.
                 </p>
                 <a href="#"
-                    class="inline-block border border-black px-7 py-2 rounded font-outfit text-[16px] font-semibold  hover:bg-black hover:text-white transition-all uppercase">
+                    class="inline-block border border-[1.7px] border-black px-2 w-[183px] py-2 rounded-md font-outfit text-[16px] font-semibold  hover:bg-black hover:text-white transition-all uppercase">
                     All Projects
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4 place-items-center ">
                 <div
                     class="relative group rounded-[40px] overflow-hidden lg:w-[472px] w-full lg:h-[687px] h-[400px] shadow-lg">
                     <img src="/assets/images/p1.png" alt="Crown House"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-10 text-white text-center">
-                        <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Landlords & Asset
+                    <div class="absolute inset-0  flex flex-col justify-end py-20 pr-1 text-white text-center">
+                        <span class="font-platypi !font-[200] md:text-[20px] text-[12px] ">Landlords & Asset
                             Managers</span>
                         <h3
                             class="font-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px] ">
@@ -426,8 +491,7 @@
                     class="relative group rounded-[40px] overflow-hidden lg:w-[472px] w-full lg:h-[687px] h-[400px] shadow-lg">
                     <img src="/assets/images/p2.png" alt="Scope"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-10 text-white text-center">
+                    <div class="absolute inset-0  flex flex-col justify-end py-20 pr-1 text-white text-center">
                         <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Co-working & Serviced
                             Offices</span>
                         <h3
@@ -441,11 +505,11 @@
                     class="relative group rounded-[40px] overflow-hidden lg:w-[472px] w-full lg:h-[687px] h-[400px] shadow-lg">
                     <img src="/assets/images/p3.png" alt="Acteon"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-10 text-white text-center">
-                        <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
+                    <div class="absolute inset-0  flex flex-col justify-end py-20 pr-1 text-white text-center">
+                        <span class="font-platypi !font-[200] md:text-[20px] text-[12px] text-center">Occupiers &
+                            Tenants</span>
                         <h3
-                            class="font-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px] ">
+                            class="font-gotham text-center font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px] ">
                             Acteon
                         </h3>
                     </div>
@@ -455,8 +519,7 @@
                     class="relative group rounded-[40px] overflow-hidden lg:w-[472px] w-full lg:h-[687px] h-[400px] shadow-lg">
                     <img src="/assets/images/p4.png" alt="Trimline"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-10 text-white text-center">
+                    <div class="absolute inset-0  flex flex-col justify-end py-20 pr-1 text-white text-center">
                         <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
                         <h3
                             class="font-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px] ">
@@ -469,8 +532,7 @@
                     class="relative group rounded-[40px] overflow-hidden lg:w-[472px] w-full lg:h-[687px] h-[400px] shadow-lg">
                     <img src="/assets/images/p1.png" alt="InfoSum"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-10 text-white text-center">
+                    <div class="absolute inset-0  flex flex-col justify-end py-20 pr-1 text-white text-center">
                         <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Occupiers & Tenants</span>
                         <h3
                             class="font-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px] ">
@@ -483,8 +545,7 @@
                     class="relative group rounded-[40px] overflow-hidden lg:w-[472px] w-full lg:h-[687px] h-[400px] shadow-lg">
                     <img src="/assets/images/p6.png" alt="Omlog"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-10 text-white text-center">
+                    <div class="absolute inset-0  flex flex-col justify-end py-20 pr-1 text-white text-center">
                         <span class="font-platypi !font-[200] md:text-[20px] text-[12px]">Logistics & Warehousing</span>
                         <h3
                             class="font-gotham font-extrabold lg:text-[54px] text-[32px]  leading-[66px]  tracking-[-2px] ">
@@ -516,12 +577,12 @@
                     <h3 class="font-gotham font-extrabold text-[27px]  mb-4 leading-tight">
                         Landlords &<br />Asset Managers
                     </h3>
-                    <p class="font-outfit text-[17px]  md:w-[281px] w-full leading-tight mb-8 flex-grow">
+                    <p class="font-platypi text-[17px]  md:w-[281px] w-full leading-tight mb-6 flex-grow">
                         We turn underperforming properties into high-value, compliant, and
                         market-ready spaces.
                     </p>
                     <a href="#"
-                        class="w-fit border border-black px-8 md:mt-5 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
+                        class="w-fit border border-black px-8 md:mt-0 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
                         More
                     </a>
                 </div>
@@ -530,12 +591,12 @@
                     <h3 class="font-gotham font-extrabold text-[27px]  mb-4 leading-tight">
                         Occupiers &<br />Tenants
                     </h3>
-                    <p class="font-outfit text-[17px]  md:w-[281px] w-full leading-tight mb-8 flex-grow">
+                    <p class="font-platypi text-[17px]  md:w-[281px] w-full leading-tight mb-6 flex-grow">
                         W+V create adaptable workplaces for global brands, designing
                         responsive environments that grow with their business.
                     </p>
                     <a href="#"
-                        class="w-fit border border-black px-8 md:mt-5 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
+                        class="w-fit border border-black px-8 md:mt-0 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
                         More
                     </a>
                 </div>
@@ -544,12 +605,12 @@
                     <h3 class="font-gotham font-extrabold text-[27px]  mb-4 leading-tight">
                         Logistics &<br />Warehousing
                     </h3>
-                    <p class="font-outfit text-[17px]  md:w-[281px] w-full leading-tight mb-8 flex-grow">
+                    <p class="font-platypi text-[17px]  md:w-[281px] w-full leading-tight mb-6 flex-grow">
                         W+V design and build high-performance logistics spaces that
                         optimise throughput, safety, and innovation for industry leaders.
                     </p>
                     <a href="#"
-                        class="w-fit border border-black px-8 md:mt-5 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
+                        class="w-fit border border-black px-8 md:mt-0 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
                         More
                     </a>
                 </div>
@@ -558,12 +619,12 @@
                     <h3 class="font-gotham font-extrabold text-[27px]  mb-4 leading-tight">
                         Co-working &<br />Serviced Offices
                     </h3>
-                    <p class="font-outfit text-[17px]  md:w-[281px] w-full leading-tight mb-8 flex-grow">
+                    <p class="font-platypi text-[17px]  md:w-[281px] w-full leading-tight mb-6 flex-grow">
                         We create dynamic, high-impact environments for flexible workspace
                         providers that attract and retain tenants at scale and speed.
                     </p>
                     <a href="#"
-                        class="w-fit border border-black px-8 md:mt-5 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
+                        class="w-fit border border-black px-8 md:mt-0 mt-2 py-2 font-outfit rounded text-[16px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all">
                         More
                     </a>
                 </div>
@@ -587,10 +648,9 @@
             <div class="relative group rounded-[40px] overflow-hidden aspect-square lg:aspect-auto shadow-sm">
                 <img src="/assets/images/news1.png" alt="Featured News"
                     class="w-full h-full  transition-transform duration-500 group-hover:scale-105" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-10 text-white">
-                    <span class="font-outfit text-xs font-bold uppercase tracking-widest mb-3 opacity-90">News</span>
-                    <h3 class="font-gotham font-bold text-[18px]  md:text-3xl leading-tight max-w-md">
+                <div class="absolute inset-0  flex flex-col justify-end p-10 text-white">
+                    <span class="font-platypi text-[16px] font-[400] mb-3 opacity-90">News</span>
+                    <h3 class="font-gotham font-bold text-[18px]  md:text-3xl leading-tight max-w-md mb-5">
                         W+V named Business Champion in the CLC's Co2nstruct Zero Programme
                     </h3>
                 </div>
@@ -619,7 +679,7 @@
 
                 <div class="flex flex-col">
                     <div class="rounded-[30px] overflow-hidden aspect-[4/3] mb-4 shadow-sm">
-                        <img src="/assets/images/news4.png" alt="Logistics" class="w-full h-full object-cover" />
+                        <img src="/assets/images/news4.png" alt="Logistics" class="w-[360px] h-[486px]  object-cover" />
                     </div>
                     <span class="font-platypi  text-[16px] text-black mb-2">Logistics & Warehousing</span>
                     <h4 class="font-gotham md:text-[27px] text-[18px] font-extrabold leading-[33px]">
@@ -675,8 +735,8 @@
                         </a>
 
                     </div>
-                    <address class="not-italic text-[15px] leading-relaxed opacity-90">
-                        <strong class="block mb-1 text-white font-bold">West+Vittori</strong>
+                    <address class="not-italic text-[16px] leading-relaxed opacity-90">
+                        <strong class="block mb-1 text-white font-bold font-platypi">West+Vittori</strong>
                         15 Long Lane<br />
                         Barbican<br />
                         London<br />
@@ -688,7 +748,7 @@
                     <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
                         WORKPLACES
                     </h4>
-                    <ul class="space-y-4 text-[15px] opacity-90">
+                    <ul class="space-y-4 text-[16px] opacity-90 font-platypi font-[300]">
                         <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Landlord & Assets Managers</a>
                         </li>
                         <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Occupiers & Tenants</a></li>
@@ -702,7 +762,7 @@
                     <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
                         COMPANY
                     </h4>
-                    <ul class="space-y-4 text-[15px] opacity-90">
+                    <ul class="space-y-4 text-[16px] opacity-90 font-platypi font-[300]">
                         <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Projects</a></li>
                         <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">News & Views</a></li>
                         <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">About</a></li>
@@ -712,12 +772,12 @@
             </div>
 
             <div class="flex flex-col md:flex-row justify-between items-end gap-10">
-                <div class="space-y-8">
+                <div class="space-y-5">
                     <h3 class="font-serif text-[36px] text-[#4CC0CD] leading-tight">
                         Ideas that shape smarter workplaces
                     </h3>
                     <a href="#"
-                        class="inline-block border border-[#4CC0CD] px-10 py-3 rounded-[4px] font-bold text-[12px] tracking-[0.2em] uppercase text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all">
+                        class="inline-block border border-[#4CC0CD]  w-[205px] text-center py-3 rounded-[4px] font-[600] text-[16px] font-outfit  uppercase text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all">
                         SUBSCRIBE
                     </a>
                 </div>
@@ -750,6 +810,13 @@
 
 
     <!-- Footer end  -->
+
+    <!-- Modal Overlay -->
+    <div id="teamModal" class="modal-overlay">
+        <div class="modal-container" id="teamModalContent">
+            <!-- AJAX content will be loaded here -->
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

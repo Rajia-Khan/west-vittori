@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/global.css" />
   <link rel="stylesheet" href="/css/font.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-white">
@@ -157,22 +158,22 @@
   <!-- Hero section start -->
   <section class="bg-[#FFBD98] md:pt-20 pt-5 pb-24">
     <div class="lg:max-w-[1600px] md:max-w-[900px] max-w-[350px] mx-auto lg:px-10 px-2">
-      <div class="lg:w-[823px] w-full mb-12">
-        <h1 class="font-platypi md:text-[29px] text-[20px] leading-relaxed mb-8 text-[#1B191A] leading-snug mb-8">
+      <div class="lg:w-[824px] w-full mb-12">
+        <h1 class="font-platypi md:text-[30px] text-[20px] leading-[50.83px] text-[#1B191A]  mb-8">
           We are West & Vittori ipsum dolor sit amLorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua ut enim ad minim veniam, quis nostru.
         </h1>
 
-        <button
-          class="border border-black px-6 py-2.5 rounded font-platypi text-[16px] font-bold tracking-widest uppercase hover:bg-[#2D2D2D] hover:text-white transition-all">
+        <a href="#capabilities"
+          class="inline-flex items-center justify-center border border-black w-[173px] py-3 rounded font-outfit text-[16px] font-bold uppercase hover:bg-[#2D2D2D] hover:text-white transition-all text-center">
           Capabilities
-        </button>
+        </a>
       </div>
 
       <div class="w-full">
         <img src="/assets/images/about-us.png" alt="Team working"
-          class="w-full rounded-[40px] object-cover md:h-[613px] h-[400px]" />
+          class="w-full rounded-[50px] object-cover md:h-[613px] h-[400px] mt-16" />
       </div>
     </div>
   </section>
@@ -186,9 +187,11 @@
         <h2 class="font-outfit font-bold md:text-[68px] text-[32px] leading-tight  mb-6">
           Our people are the difference. Every time.
         </h2>
-        <p class="font-platypi text-[19px]  font-normal mb-8 text-[#1B191A] lg:w-[600px] w-full">
+        <p class="font-platypi leading-[30px] text-[19px]  font-normal mb-8 text-[#1B191A] lg:w-[600px] w-full">
           We offer a holistic approach to each project, going beyond
-          traditional office design to deliver innovative and tailored
+          <a href="/index.html#mask-group"
+            class="underline decoration-1 underline-offset-4 hover:opacity-75 transition-opacity">traditional office
+            design</a> to deliver innovative and tailored
           solutions. Our coworking space designs are created to enhance
           collaboration, creativity and flexibility. We seek to encompass
           environmental, social, and economic factors alongside well-being,
@@ -197,125 +200,196 @@
 
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a1.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+          <img src="/assets/images/a1.png" alt="Roddy Woolgar"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Roddy Woolgar
             </h3>
-            <p class="font-platypi text-[20px] opacity-90 font-light text-center mt-1">Managing Director</p>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Managing Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a2.png" alt="Amy Louise" class="w-full h-full object-cover" />
+          <img src="/assets/images/a2.png" alt="Amy Louise"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Amy Louise
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Creative Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a3.png" alt="William Marshall" class="w-full h-full object-cover" />
+          <img src="/assets/images/a3.png" alt="William Marshall"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               William Marshall
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Founding Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a4.png" alt="Hana Rilje" class="w-full h-full object-cover" />
+          <img src="/assets/images/a4.png" alt="Hana Rilje"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Hana Rilje
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Operations Manager
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a5.png" alt="Ché Marshall" class="w-full h-full object-cover" />
+          <img src="/assets/images/a5.png" alt="Ché Marshall"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Ché Marshall
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Project Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a3.png" alt="William Marshall" class="w-full h-full object-cover" />
+          <img src="/assets/images/a3.png" alt="William Marshall"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               William Marshall
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Founding Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a1.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+          <img src="/assets/images/a1.png" alt="Roddy Woolgar"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Roddy Woolgar
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Managing Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a2.png" alt="Amy Louise" class="w-full h-full object-cover" />
+          <img src="/assets/images/a2.png" alt="Amy Louise"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Amy Louise
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Creative Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a1.png" alt="Roddy Woolgar" class="w-full h-full object-cover" />
+          <img src="/assets/images/a1.png" alt="Roddy Woolgar"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Roddy Woolgar
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Managing Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a2.png" alt="Amy Louise" class="w-full h-full object-cover" />
+          <img src="/assets/images/a2.png" alt="Amy Louise"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Amy Louise
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Creative Director
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a6.png" alt="Hana Rilje" class="w-full h-full object-cover" />
+          <img src="/assets/images/a6.png" alt="Hana Rilje"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               Hana Rilje
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Operations Manager
+            </p>
           </div>
         </div>
 
         <div class="team-card relative group rounded-[30px] overflow-hidden aspect-[4/5] shadow-sm cursor-pointer">
-          <img src="/assets/images/a3.png" alt="William Marshall" class="w-full h-full object-cover" />
+          <img src="/assets/images/a3.png" alt="William Marshall"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-            <h3 class="text-center font-gotham text-[30.38px] font-extrabold">
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-all duration-500">
+            <h3
+              class="text-center font-gotham text-[30.38px] font-extrabold transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               William Marshall
             </h3>
+            <p
+              class="font-platypi text-[18px] opacity-0 group-hover:opacity-90 font-light text-center transition-opacity duration-500 mt-0">
+              Founding Director
+            </p>
           </div>
         </div>
       </div>
@@ -324,13 +398,13 @@
   <!-- Our people section end -->
 
   <!-- Our Capabilities start-->
-  <section class="bg-[--color-tertiary] py-20">
+  <section id="capabilities" class="bg-[--color-tertiary] py-20">
     <div class="lg:max-w-[1600px] md:max-w-[1400px] max-w-[350px] mx-auto md:px-10 px-2">
       <h2 class="font-outfit font-semibold text-[18px] mb-12">
         Our Capabilities
       </h2>
 
-      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-aos="fade-up">
         <div class="lg:col-span-5">
           <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Analysis</h3>
         </div>
@@ -344,7 +418,8 @@
         </div>
       </div>
 
-      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-aos="fade-up"
+        data-aos-delay="100">
         <div class="lg:col-span-5">
           <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Design & process</h3>
         </div>
@@ -358,7 +433,8 @@
         </div>
       </div>
 
-      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="border-t border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-aos="fade-up"
+        data-aos-delay="200">
         <div class="lg:col-span-5">
           <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Strategy</h3>
         </div>
@@ -372,7 +448,8 @@
         </div>
       </div>
 
-      <div class="border-t border-b border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="border-t border-b border-black py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
+        data-aos="fade-up" data-aos-delay="300">
         <div class="lg:col-span-5">
           <h3 class="font-gotham font-extrabold text-[40px] leading-tight">Delivery</h3>
         </div>
@@ -475,8 +552,6 @@
   <!-- Partners section end  -->
 
   <!-- Footer start -->
-
-
   <footer class="bg-[#4E4F50] text-white pt-24 pb-20 font-sans">
     <div class="lg:max-w-[1400px]  w-full mx-auto px-8">
 
@@ -497,12 +572,12 @@
           <div class="mb-8">
             <a href="mailto:hello@westandvittori.com"
               class="block font-platypi lg:text-[30px] text-[20px] hover:text-[--color-tertiary] transition-colors mb-2 leading-tight">
-              hello@westandvittori.com </br>0203 772 4551
+              hello@westandvittori.com</br> 0203 772 4551
             </a>
 
           </div>
-          <address class="not-italic text-[15px] leading-relaxed opacity-90">
-            <strong class="block mb-1 text-white font-bold">West+Vittori</strong>
+          <address class="not-italic text-[16px] leading-relaxed opacity-90">
+            <strong class="block mb-1 text-white font-bold font-platypi">West+Vittori</strong>
             15 Long Lane<br />
             Barbican<br />
             London<br />
@@ -514,11 +589,13 @@
           <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
             WORKPLACES
           </h4>
-          <ul class="space-y-4 text-[15px] opacity-90">
-            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Landlord & Assets Managers</a></li>
+          <ul class="space-y-4 text-[16px] opacity-90 font-platypi font-[300]">
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Landlord & Assets Managers</a>
+            </li>
             <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Occupiers & Tenants</a></li>
             <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Logistics & Warehousing</a></li>
-            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Co-working & Serviced Offices</a></li>
+            <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Co-working & Serviced Offices</a>
+            </li>
           </ul>
         </div>
 
@@ -526,7 +603,7 @@
           <h4 class="text-[#4CC0CD] font-bold text-[13px] tracking-widest uppercase mb-10">
             COMPANY
           </h4>
-          <ul class="space-y-4 text-[15px] opacity-90">
+          <ul class="space-y-4 text-[16px] opacity-90 font-platypi font-[300]">
             <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">Projects</a></li>
             <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">News & Views</a></li>
             <li><a href="#" class="hover:text-[#4CC0CD] transition-colors">About</a></li>
@@ -536,12 +613,12 @@
       </div>
 
       <div class="flex flex-col md:flex-row justify-between items-end gap-10">
-        <div class="space-y-8">
+        <div class="space-y-5">
           <h3 class="font-serif text-[36px] text-[#4CC0CD] leading-tight">
             Ideas that shape smarter workplaces
           </h3>
           <a href="#"
-            class="inline-block border border-[#4CC0CD] px-10 py-3 rounded-[4px] font-bold text-[12px] tracking-[0.2em] uppercase text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all">
+            class="inline-block border border-[#4CC0CD]  w-[205px] text-center py-3 rounded-[4px] font-[600] text-[16px] font-outfit  uppercase text-[#4CC0CD] hover:bg-[#4CC0CD] hover:text-[#4D4D4D] transition-all">
             SUBSCRIBE
           </a>
         </div>
@@ -583,6 +660,14 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
   <script src="/script.js"></script>
 </body>
 

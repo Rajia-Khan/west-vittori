@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: "auto",
     spaceBetween: 24,
     centeredSlides: false,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -190,6 +195,21 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+
+  // Attach listeners for Project Modal
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', () => {
+      openModal('projectModal', 'projectModalContent', '/project-open.html');
+    });
+  });
+
+  // Attach listeners for Team Modal
+  document.querySelectorAll('.team-card').forEach(card => {
+    card.addEventListener('click', () => {
+      openModal('teamModal', 'teamModalContent', '/team-open.html');
+    });
+  });
 });
 
 //Tabs
@@ -250,6 +270,34 @@ function toggleMobileDropdown(id) {
     dropdown.classList.toggle("hidden");
   }
 }
+
+// Scroll animation for workplaces rows (Index Page Only)
+window.addEventListener("scroll", function () {
+  const scrollSection = document.getElementById("workplaces-scroll-section");
+  if (scrollSection) {
+    const row1 = document.getElementById("scroll-row-1");
+    const row2 = document.getElementById("scroll-row-2");
+
+    if (row1 || row2) {
+      const rect = scrollSection.getBoundingClientRect();
+      const viewHeight = window.innerHeight;
+
+      // Animation triggers when section is in viewport
+      if (rect.top < viewHeight && rect.bottom > 0) {
+        const scrollFactor = rect.top;
+
+        if (row1) {
+          // Increased multiplier for more translation, using translate3d for smoothness
+          row1.style.transform = `translate3d(${scrollFactor * 0.4}px, 0, 0)`;
+        }
+        if (row2) {
+          // Moves in opposite direction with a negative offset to keep icons visible
+          row2.style.transform = `translate3d(${(scrollFactor * -0.4) - 400}px, 0, 0)`;
+        }
+      }
+    }
+  }
+});
 
 /* ================================
    MODAL LOGIC
@@ -316,18 +364,5 @@ function closeModal(modalId) {
   }
 }
 
-// Attach listeners for Project Modal
-document.querySelectorAll('.project-card').forEach(card => {
-  card.style.cursor = 'pointer';
-  card.addEventListener('click', () => {
-    openModal('projectModal', 'projectModalContent', '/project-open.html');
-  });
-});
 
-// Attach listeners for Team Modal
-document.querySelectorAll('.team-card').forEach(card => {
-  card.addEventListener('click', () => {
-    openModal('teamModal', 'teamModalContent', '/team-open.html');
-  });
-});
 
