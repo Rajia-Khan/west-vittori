@@ -524,6 +524,17 @@ body.modal-open {
 
 
 
-.swiper {
+/* Specific swipers that need visible overflow for pagination or effects */
+.peopleSwiper,
+.testimonialSwiper,
+.mySwiper,
+.projectHeroSwiper {
   overflow: visible !important;
+}
+
+/* Ensure text swipers are always hidden */
+.contactTextSwiper,
+.serviceTextSwiper,
+.blogTextSwiper {
+  overflow: hidden !important;
 }

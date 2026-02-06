@@ -181,19 +181,31 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (document.querySelector(".contactImageSwiper")) {
+    const contactTextSwiper = new Swiper(".contactTextSwiper", {
+      slidesPerView: 1,
+      loop: true,
+      allowTouchMove: false,
+      speed: 800,
+    });
+
     const contactImageSwiper = new Swiper(".contactImageSwiper", {
       slidesPerView: 1.5,
       spaceBetween: 24,
       loop: true,
-      allowTouchMove: false,
+      allowTouchMove: true,
+      speed: 800,
       autoplay: {
-        delay: 3500,
+        delay: 1500,
         disableOnInteraction: false,
       },
       navigation: {
         nextEl: ".contact-next",
       },
     });
+
+    // Sync sliders
+    contactImageSwiper.controller.control = contactTextSwiper;
+    contactTextSwiper.controller.control = contactImageSwiper;
   }
 
   // Attach listeners for Project Modal
