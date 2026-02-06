@@ -151,11 +151,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (document.querySelector(".blogTextSwiper")) {
+    const blogTextSwiper = new Swiper(".blogTextSwiper", {
+      slidesPerView: 1,
+      loop: true,
+      allowTouchMove: false,
+      speed: 800,
+      pagination: {
+        el: ".blog-pagination",
+        clickable: true,
+      },
+    });
+
     const blogImageSwiper = new Swiper(".blogImageSwiper", {
       slidesPerView: 1.5,
       spaceBetween: 24,
       loop: true,
-      allowTouchMove: false,
+      allowTouchMove: true,
+      speed: 800,
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
@@ -163,21 +175,15 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation: {
         nextEl: ".blog-next",
       },
+      breakpoints: {
+        320: { slidesPerView: 1, spaceBetween: 15 },
+        1024: { slidesPerView: 1.5, spaceBetween: 24 }
+      }
     });
 
-    const blogTextSwiper = new Swiper(".blogTextSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 40,
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".blog-pagination",
-        clickable: true,
-      },
-    });
+    // Sync sliders
+    blogImageSwiper.controller.control = blogTextSwiper;
+    blogTextSwiper.controller.control = blogImageSwiper;
   }
 
   if (document.querySelector(".contactImageSwiper")) {
