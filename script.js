@@ -98,26 +98,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (document.querySelector(".serviceTextSwiper")) {
-    const serviceImageSwiper = new Swiper(".serviceImageSwiper", {
-      slidesPerView: 1.5,
-      spaceBetween: 24,
-      loop: true,
-      allowTouchMove: false,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".service-next",
-      },
-    });
-
     const serviceTextSwiper = new Swiper(".serviceTextSwiper", {
       slidesPerView: 1,
-      spaceBetween: 40,
       loop: true,
+      allowTouchMove: false,
+      speed: 800,
       autoplay: {
-        delay: 4000,
+        delay: 3500,
         disableOnInteraction: false,
       },
       pagination: {
@@ -125,6 +112,25 @@ document.addEventListener("DOMContentLoaded", function () {
         clickable: true,
       },
     });
+
+    const serviceImageSwiper = new Swiper(".serviceImageSwiper", {
+      slidesPerView: 1.5,
+      spaceBetween: 24,
+      loop: true,
+      allowTouchMove: true,
+      speed: 800,
+      navigation: {
+        nextEl: ".service-next",
+      },
+      breakpoints: {
+        320: { slidesPerView: 1, spaceBetween: 15 },
+        1024: { slidesPerView: 1.5, spaceBetween: 24 }
+      }
+    });
+
+    // Sync sliders
+    serviceTextSwiper.controller.control = serviceImageSwiper;
+    serviceImageSwiper.controller.control = serviceTextSwiper;
   }
 
   if (document.querySelector(".projectGallerySwiper")) {
