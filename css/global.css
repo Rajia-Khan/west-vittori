@@ -209,19 +209,30 @@ body {
    TESTIMONIAL SWIPER
 ================================ */
 .testimonialSwiper {
-  padding-top: 40px !important;
+  padding: 120px 0 100px 0 !important;
+  overflow: visible !important;
 }
 
 /* Slide animation */
 .testimonialSwiper .swiper-slide {
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(0.85) translateY(0);
-  opacity: 0.5;
+  transform: scale(0.85);
+  opacity: 0.8;
+  width: 330px;
+
+  height: auto;
 }
 
 .testimonialSwiper .swiper-slide-active {
-  transform: scale(1) translateY(-30px);
+  transform: scale(1) translateY(-80px);
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .testimonialSwiper .swiper-slide {
+    width: 740px;
+    height: 441px;
+  }
 }
 
 /* Pagination */
@@ -243,8 +254,20 @@ body {
    TESTIMONIAL CARD
 ================================ */
 .testimonial-card {
-  max-width: 650px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
+  background: #ffbd9859 !important;
+  transition: all 0.5s ease;
+}
+
+.testimonialSwiper .swiper-slide-active .testimonial-card {
+  background: var(--color-quaternary) !important;
+  border: none !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
 /* ================================
@@ -422,12 +445,7 @@ body {
 /* ================================
    TESTIMONIAL SWIPER
  ================================ */
-.testimonialSwiper {
-  padding: 60px 0 100px 0 !important;
-  /* Extra space for lifted slide and pagination gap */
-  overflow: visible !important;
-}
-
+/* Pagination */
 .testimonialSwiper .swiper-pagination {
   display: flex !important;
   align-items: center;
@@ -450,17 +468,8 @@ body {
   height: 27px;
 }
 
-.testimonialSwiper .testimonial-card {
-  background: rgb(255, 232, 219) !important;
-  opacity: 1 !important;
-  transition: all 0.5s ease;
-}
-
 .testimonialSwiper .swiper-slide-active .testimonial-card {
   background: var(--color-quaternary) !important;
-  transform: scale(1.1) translateY(-30px);
-  /* Lift up effect */
-  opacity: 1;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
@@ -508,16 +517,37 @@ body.modal-open {
 
 
 
-/* Specific swipers that need visible overflow for pagination or effects */
+/* Global Swiper Overflows */
 .peopleSwiper,
 .testimonialSwiper,
 .mySwiper {
   overflow: visible !important;
 }
 
-/* Ensure text swipers are always hidden */
 .contactTextSwiper,
 .serviceTextSwiper,
 .blogTextSwiper {
   overflow: hidden !important;
+}
+
+.testimonial-card h3 {
+  font-size: 36px !important;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.testimonial-card p {
+  font-size: 18px !important;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto 2.5rem auto;
+}
+
+.testimonial-card span {
+  font-size: 14px !important;
+  letter-spacing: 0.1em;
+}
+
+#workplaces-scroll-section {
+  height: 441px !important;
 }

@@ -43,33 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  new Swiper(".peopleSwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 24,
-    centeredSlides: false,
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      640: { slidesPerView: "auto" },
-      1024: { slidesPerView: "auto" },
-    },
-  });
+
   new Swiper(".testimonialSwiper", {
-    slidesPerView: 1.2,
-    spaceBetween: 30,
+    slidesPerView: "auto",
+    spaceBetween: 0,
     centeredSlides: true,
-    initialSlide: 1,
     loop: true,
-    speed: 800, // Smooth transition speed
+    loopedSlides: 8,
+    speed: 1000,
+    roundLengths: true,
+    normalizeSlideIndex: true,
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -77,8 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true,
     },
     breakpoints: {
-      640: { slidesPerView: 1.8 },
-      1024: { slidesPerView: 2.5 }, // Adjusted for better visibility of side cards
+      320: {
+        spaceBetween: 0,
+      },
+      768: {
+        spaceBetween: 0,
+      }
     },
   });
 
