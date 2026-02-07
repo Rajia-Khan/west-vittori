@@ -12,227 +12,196 @@
   <link rel="stylesheet" href="/css/font.css" />
 </head>
 
-<body class="bg-white py-4">
+<body class="bg-white">
 
-  <header class="w-full">
-    <div class="hidden lg:block">
-      <div class="lg:max-w-[1600px] mx-auto px-10 py-6 flex items-center justify-between">
-        <div>
-          <a href="/index.html">
-            <img src="/assets/images/LOGO.svg" alt="logo" class="w-[393.97px] h-[28px]" />
-          </a>
-        </div>
-        <div class="flex gap-8">
-          <nav class="flex items-center gap-10 font-outfit text-sm">
-            <!-- WORKPLACES Dropdown -->
-            <div class="relative group">
-              <a href="#" class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5">
-                WORKPLACES
-                <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
-              </a>
-              <div
-                class="absolute top-full left-0 mt-2 w-[280px] bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div class="py-3">
-
-                  <a href="/service-single-page.html"
-                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Co-working
-                    & Serviced Offices</a>
-                  <a href="/blog-single-page.html"
-                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Blog
-                    Details</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- PROJECTS Dropdown -->
-            <div class="relative group">
-              <a href="#" class="text-[--color-primary] font-semibold text-[16.22px] flex items-center gap-1.5">
-                PROJECTS
-                <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
-              </a>
-              <div
-                class="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div class="py-3">
-                  <a href="/project.html"
-                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">All
-                    Projects</a>
-                  <a href="/project-single-page.html"
-                    class="block px-6 py-3 text-[14px] font-medium text-[--color-primary] hover:bg-gray-100 transition-colors">Project
-                    Details</a>
-                </div>
-              </div>
-            </div>
-
-            <a href="/blog-page.html" class="text-[--color-primary] font-semibold text-[16.22px]">NEWS & VIEWS</a>
-            <a href="/about.html" class="text-[--color-primary] font-semibold text-[16.22px]">ABOUT US</a>
-          </nav>
-          <a href="/contact.html"
-            class="flex justify-center items-center bg-[--color-quaternary] text-[16.22px] font-semibold rounded-full w-[200px] h-[51px]">
-            <div class="w-[10.24px] h-[10.24px] rounded-full bg-black mr-2"></div>
-            GET IN TOUCH
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="lg:hidden flex items-center justify-between px-6 py-4 border-b">
-      <a href="/index.html">
-        <img src="/assets/images/LOGO.svg" alt="logo" class="w-[150px] h-auto" />
+  <!-- Full-width Hero Section with Overlaid Header -->
+  <header class="absolute top-6 left-0 w-full px-4 md:px-10 z-50">
+    <div class="max-w-[1600px] mx-auto bg-white rounded-full py-3 px-8 flex items-center justify-between shadow-lg">
+      <!-- Logo -->
+      <a href="/index.html" class="flex-shrink-0">
+        <img src="/assets/images/LOGO.svg" alt="logo" class="w-[200px] md:w-[280px] lg:w-[350px] h-auto" />
       </a>
 
-      <button id="openSidebar" class="flex flex-col gap-1.5 p-2">
-        <span class="w-7 h-0.5 bg-black"></span>
-        <span class="w-7 h-0.5 bg-black"></span>
-        <span class="w-7 h-0.5 bg-black"></span>
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center gap-8">
+        <nav class="flex items-center gap-8 font-outfit">
+          <!-- WORKPLACES Dropdown -->
+          <div class="relative group">
+            <a href="#" class="text-[--color-primary] font-bold text-[14px] flex items-center gap-1.5 uppercase">
+              Workplaces
+              <img src="/assets/images/Vector.png" alt="dropdown" class="w-[5px] h-auto" />
+            </a>
+            <div
+              class="absolute top-full left-0 mt-4 w-[240px] bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="py-2">
+                <a href="/service-single-page.html"
+                  class="block px-6 py-3 text-[14px] hover:bg-gray-100 transition-colors">Co-working & Serviced
+                  Offices</a>
+                <a href="/blog-single-page.html"
+                  class="block px-6 py-3 text-[14px] hover:bg-gray-100 transition-colors">Blog Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECTS Dropdown -->
+          <div class="relative group">
+            <a href="#" class="text-[--color-primary] font-bold text-[14px] flex items-center gap-1.5 uppercase">
+              Projects
+              <img src="/assets/images/Vector.png" alt="dropdown" class="w-[5px] h-auto" />
+            </a>
+            <div
+              class="absolute top-full left-0 mt-4 w-[200px] bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="py-2">
+                <a href="/project.html" class="block px-6 py-3 text-[14px] hover:bg-gray-100 transition-colors">All
+                  Projects</a>
+                <a href="/project-single-page.html"
+                  class="block px-6 py-3 text-[14px] hover:bg-gray-100 transition-colors">Project Details</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="/blog-page.html" class="text-[--color-primary] font-bold text-[14px] uppercase">News & Views</a>
+          <a href="/about.html" class="text-[--color-primary] font-bold text-[14px] uppercase">About Us</a>
+        </nav>
+
+        <a href="/contact.html"
+          class="flex items-center justify-center gap-2 bg-black text-white text-[13px] font-bold px-6 py-2.5 rounded-full hover:bg-gray-800 transition-all uppercase">
+          <span class="w-2 h-2 rounded-full bg-white"></span>
+          Get In-Touch
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="openSidebar" class="lg:hidden p-2">
+        <div class="w-6 h-0.5 bg-black mb-1.5"></div>
+        <div class="w-6 h-0.5 bg-black mb-1.5"></div>
+        <div class="w-6 h-0.5 bg-black"></div>
       </button>
     </div>
   </header>
 
+  <!-- Sidebar Overlay & Sidebar (Consolidated) -->
   <div id="sidebarOverlay"
-    class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
-
+    class="fixed inset-0 bg-black/50 z-[100] opacity-0 pointer-events-none transition-opacity duration-300"></div>
   <div id="sidebar"
-    class="fixed top-0 right-0 w-[80%] max-w-[350px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-xl">
+    class="fixed top-0 right-0 w-[80%] max-w-[350px] h-full bg-white z-[110] transform translate-x-full transition-transform duration-300 ease-in-out shadow-xl">
     <div class="p-8 flex flex-col h-full">
       <button id="closeSidebar" class="self-end text-3xl font-light mb-8">
         &times;
       </button>
-
-      <nav class="flex flex-col gap-6 text-[20px] font-semibold font-outfit">
-        <!-- WORKPLACES Dropdown -->
-        <div class="border-b pb-4">
+      <nav class="flex flex-col gap-6 text-[20px] font-semibold font-outfit text-black">
+        <div class="border-b border-gray-100 pb-4">
           <button onclick="toggleMobileDropdown('workplaces-mobile')"
             class="flex items-center justify-between w-full text-left">
             <span>WORKPLACES</span>
-            <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
+            <img src="/assets/images/Vector.png" alt="dropdown" class="w-[10px] h-auto" />
           </button>
           <div id="workplaces-mobile" class="hidden mt-3 ml-4 space-y-3">
-
             <a href="/service-single-page.html" class="block text-[16px] font-normal">Co-working & Serviced Offices</a>
             <a href="/blog-single-page.html" class="block text-[16px] font-normal">Blog Details</a>
           </div>
         </div>
-
-        <!-- PROJECTS Dropdown -->
-        <div class="border-b pb-4">
+        <div class="border-b border-gray-100 pb-4">
           <button onclick="toggleMobileDropdown('projects-mobile')"
             class="flex items-center justify-between w-full text-left">
             <span>PROJECTS</span>
-            <img src="/assets/images/Vector.png" alt="dropdown" class="w-[6.52px] h-[5.63px] object-cover" />
+            <img src="/assets/images/Vector.png" alt="dropdown" class="w-[10px] h-auto" />
           </button>
           <div id="projects-mobile" class="hidden mt-3 ml-4 space-y-3">
             <a href="/project.html" class="block text-[16px] font-normal">All Projects</a>
             <a href="/project-single-page.html" class="block text-[16px] font-normal">Project Details</a>
           </div>
         </div>
-
-        <a href="/blog-page.html" class="border-b pb-4">NEWS & VIEWS</a>
-        <a href="/about.html" class="border-b pb-4">ABOUT US</a>
+        <a href="/blog-page.html" class="border-b border-gray-100 pb-4 uppercase">News & Views</a>
+        <a href="/about.html" class="border-b border-gray-100 pb-4 uppercase">About Us</a>
       </nav>
-    </div>
-  </div>
-
-  <div id="sidebar"
-    class="fixed top-0 right-0 w-[300px] h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl">
-    <div class="p-6 flex flex-col h-full">
-      <button id="closeSidebar" class="self-end text-2xl font-bold p-2">
-        &times;
-      </button>
-
-      <nav class="flex flex-col gap-6 mt-10 font-outfit font-semibold text-[18px]">
-        <a href="#" class="text-[--color-primary] border-b pb-2">WORKPLACES</a>
-        <a href="#" class="text-[--color-primary] border-b pb-2">PROJECTS</a>
-        <a href="#" class="text-[--color-primary] border-b pb-2">NEWS & VIEWS</a>
-        <a href="/about.html" class="text-[--color-primary] border-b pb-2">ABOUT US</a>
-      </nav>
-
       <a href="/contact.html"
-        class="mt-auto flex justify-center items-center bg-[--color-quaternary] py-4 rounded-full font-outfit font-semibold">
+        class="mt-auto flex justify-center items-center bg-[--color-quaternary] py-4 rounded-full font-outfit font-semibold text-black">
         <div class="w-2.5 h-2.5 rounded-full bg-black mr-2"></div>
         GET IN TOUCH
       </a>
     </div>
   </div>
-  <!-- Responsive sidebar end -->
 
-  <!-- Hero section start -->
-  <section class="py-4">
-    <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
-      <div class="relative overflow-hidden rounded-[40px]">
-        <img src="/assets/images/service-office-2.png" alt="Tooley Street Office"
-          class="w-full h-[350px] md:h-[700px] object-cover" />
+  <section class="relative w-full h-[600px] md:h-[800px] lg:h-[90vh] overflow-hidden">
+    <img src="/assets/images/service-office-2.png" alt="Tooley Street Office"
+      class="absolute inset-0 w-full h-full object-cover" />
 
-        <div class="absolute top-8 left-1/2 -translate-x-1/2">
-          <a href="#" class="text-white text-xs uppercase tracking-widest flex items-center gap-2 opacity-80">
-            <span class="w-1.5 h-1.5 bg-white rounded-full"></span> Go Back
-          </a>
-        </div>
+    <div class="absolute inset-0 bg-black/20"></div>
 
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <h1 class="font-outfit font-bold text-[30px] md:text-[80px] tracking-tight text-center">
-            Tooley Street
-          </h1>
-          <a href="#"
-            class="mt-4 px-8 py-2 border border-white rounded-full text-sm font-medium hover:bg-white hover:text-black transition-all">
-            PROJECT INFO
-          </a>
-        </div>
-      </div>
+    <div class="absolute inset-x-0 bottom-0 flex flex-col items-center justify-end text-white pb-16 z-10 px-4">
+      <h1
+        class="font-gotham font-medium text-[48px] md:text-[60px] leading-[66px] tracking-[-0.02em] text-center mb-10">
+        Tooley Street
+      </h1>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 px-4">
-        <div class="flex flex-col gap-2">
-          <span class="text-gray-500 text-sm font-medium">Location</span>
-          <span class="text-black font-bold text-xl md:text-2xl">Logistics & Warehousing</span>
-        </div>
-
-        <div class="flex flex-col gap-2">
-          <span class="text-gray-500 text-sm font-medium">TYPE</span>
-          <span class="text-black font-bold text-xl md:text-2xl">Cat A</span>
-        </div>
-
-        <div class="flex flex-col gap-2">
-          <span class="text-gray-500 text-sm font-medium">Size</span>
-          <span class="text-black font-bold text-xl md:text-2xl">12,000 FT</span>
-        </div>
-
-        <div class="flex flex-col gap-2">
-          <span class="text-gray-500 text-sm font-medium">Location</span>
-          <span class="text-black font-bold text-xl md:text-2xl">Edmund St, London</span>
-        </div>
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 w-full justify-center">
+        <a href="#"
+          class="font-outfit font-semibold text-[14px] tracking-widest uppercase hover:opacity-70 transition-opacity flex items-center gap-3">
+          <span class="w-[8px] h-[8px] bg-white rounded-full"></span>
+          Go Back
+        </a>
+        <a href="#"
+          class="min-w-[180px] py-3.5 border border-white rounded-[10px] text-white font-outfit font-semibold text-[13px] tracking-widest text-center uppercase hover:bg-white hover:text-black transition-all">
+          Project Info
+        </a>
       </div>
     </div>
   </section>
-  <!-- Hero section end -->
+
+  <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-10 px-4">
+      <div class="flex flex-col gap-2">
+        <span class="font-platypi font-normal text-[16px] leading-[33px] text-black">Location</span>
+        <span class="text-black font-gotham font-[500] text-[27px] leading-[33px] tracking-[-0.02em]">Logistics &
+          Warehousing</span>
+      </div>
+
+      <div class="flex flex-col gap-2  lg:pl-20 pl-0">
+        <span class="font-platypi font-normal text-[16px] leading-[33px] text-black">TYPE</span>
+        <span class="text-black font-gotham font-[500] text-[27px] leading-[33px] tracking-[-0.02em]">Cat A</span>
+      </div>
+
+      <div class="flex flex-col gap-2 ">
+        <span class="font-platypi font-normal text-[16px] leading-[33px] text-black">Size</span>
+        <span class="text-black font-gotham font-[500] text-[27px] leading-[33px] tracking-[-0.02em]">12,000 FT</span>
+      </div>
+
+      <div class="flex flex-col gap-2 ">
+        <span class="font-platypi font-normal text-[16px] leading-[33px] text-black">Location</span>
+        <span class="text-black font-gotham font-[500] text-[27px] leading-[33px] tracking-[-0.02em]">Edmund St,
+          London</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Images section start-->
-  <img src="/assets/images/office-table.png" alt="office-table" class="mx-auto" />
-
-  <img src="/assets/images/office-table-2.png" class="mx-auto my-12" />
+  <img src="/assets/images/office-table.png" alt="office-table" class="mx-auto lg:mt-32 !w-[1500px]" />
+  <img src="/assets/images/office-table-2.png" class="mx-auto my-24 lg:h-[767px] h-[300px] w-full" />
 
   <!-- Images section end -->
 
   <!-- Slider section start -->
-
-  <div class="lg:max-w-[1600px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 mb-20">
+  <div class="w-full mb-20 overflow-hidden">
     <div class="swiper projectGallerySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="/assets/images/p8.png" class="w-full h-[500px] object-cover rounded-[30px]" />
+          <img src="/assets/images/p8.png" class="w-full h-[500px] md:h-[767px] object-cover rounded-[50px]" />
         </div>
         <div class="swiper-slide">
-          <img src="/assets/images/p9.png" class="w-full h-[500px] object-cover rounded-[30px]" />
+          <img src="/assets/images/p9.png" class="w-full h-[500px] md:h-[767px] object-cover rounded-[50px]" />
         </div>
         <div class="swiper-slide">
-          <img src="/assets/images/p10.png" class="w-full h-[500px] object-cover rounded-[30px]" />
+          <img src="/assets/images/p10.png" class="w-full h-[500px] md:h-[767px] object-cover rounded-[50px]" />
         </div>
         <div class="swiper-slide">
-          <img src="/assets/images/p8.png" class="w-full h-[500px] object-cover rounded-[30px]" />
+          <img src="/assets/images/p8.png" class="w-full h-[500px] md:h-[767px] object-cover rounded-[50px]" />
         </div>
         <div class="swiper-slide">
-          <img src="/assets/images/p9.png" class="w-full h-[500px] object-cover rounded-[30px]" />
+          <img src="/assets/images/p9.png" class="w-full h-[500px] md:h-[767px] object-cover rounded-[50px]" />
         </div>
         <div class="swiper-slide">
-          <img src="/assets/images/p10.png" class="w-full h-[500px] object-cover rounded-[30px]" />
+          <img src="/assets/images/p10.png" class="w-full h-[500px] md:h-[767px] object-cover rounded-[50px]" />
         </div>
       </div>
     </div>
@@ -240,29 +209,27 @@
 
   <!-- Slider section end -->
 
-  <img src="/assets/images/p11.png" alt="product" class="mx-auto py-12" />
-  <img src="/assets/images/p12.png" alt="product" class="mx-auto py-12" />
-  <img src="/assets/images/p13.png" alt="product" class="mx-auto py-12" />
+  <img src="/assets/images/p11.png" alt="product" class="mx-auto  !w-[1500px]" />
+  <img src="/assets/images/p12.png" alt="product" class="mx-auto lg:mt-20 !w-[1500px]" />
+  <img src="/assets/images/p13.png" alt="product" class="mx-auto lg:mt-20 !w-[1500px]" />
 
 
 
-  <!-- Working with us section end -->
-
-  <section class="lg:max-w-[1440px] md:max-w-[750px] max-w-[350px] mx-auto md:px-6 px-2 py-12">
-    <div class="bg-[#4CC0CD] rounded-[40px] p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12">
-      <div class="lg:w-1/2 w-full text-black">
-        <h2 class="font-outfit font-bold text-2xl md:text-5xl leading-tight mb-10 max-w-md">
+  <section class="lg:max-w-[1500px] md:max-w-[750px] max-w-[350px] mx-auto  px-2 py-20">
+    <div class="bg-[#4CC0CD] rounded-[20px] p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div class="lg:w-[666px] w-full text-black">
+        <h2 class="font-gotham font-medium text-2xl md:text-[40px] leading-[46px] tracking-[-2px]  mb-10 ">
           Creating co-working & serviced offices your tenants will love!
         </h2>
 
-        <ul class="space-y-6 mb-12">
+        <ul class=" space-y-2 mb-12">
           <li class="flex items-center gap-4">
             <div class="w-6 h-6 border-2 border-black rounded-full flex items-center justify-center flex-shrink-0">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <span class="font-outfit font-medium text-lg">Increase demand as the ‘go-to’ flexi space</span>
+            <span class="font-platypi text-[20.65px] leading-tight">Increase demand as the ‘go-to’ flexi space</span>
           </li>
           <li class="flex items-center gap-4">
             <div class="w-6 h-6 border-2 border-black rounded-full flex items-center justify-center flex-shrink-0">
@@ -270,7 +237,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <span class="font-outfit font-medium text-lg">Make a positive impact on the workplace environment</span>
+            <span class="font-platypi text-[20.65px] leading-tight">Make a positive impact on the workplace
+              environment</span>
           </li>
           <li class="flex items-center gap-4">
             <div class="w-6 h-6 border-2 border-black rounded-full flex items-center justify-center flex-shrink-0">
@@ -278,17 +246,17 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <span class="font-outfit font-medium text-lg">Flexible co-working spaces that work</span>
+            <span class="font-platypi text-[20.65px] leading-tight">Flexible co-working spaces that work</span>
           </li>
         </ul>
 
         <a href="#"
-          class="inline-block border border-black px-8 py-3 font-outfit font-bold text-xs tracking-widest uppercase hover:bg-black hover:text-white transition-all">
+          class="inline-block border border-black text-center w-[180px] rounded-md py-2.5 font-outfit font-bold text-[16px] uppercase hover:bg-black hover:text-white transition-all text-black">
           Get In-Touch
         </a>
       </div>
 
-      <div class="lg:w-1/2 w-full">
+      <div class="lg:w-[515px] w-full">
         <div class="rounded-[40px] overflow-hidden aspect-[4/3] lg:aspect-square xl:aspect-[1.2/1]">
           <img src="/assets/images/co-working.png" alt="Team collaborating in office"
             class="w-full h-full object-cover" />
@@ -296,6 +264,21 @@
       </div>
     </div>
   </section>
+
+
+
+  <div class=" relative lg:max-w-[1500px] md:max-w-[750px] max-w-[350px] mx-auto">
+    <img src="/assets/images/service-office.png" alt="Hero" class="w-full h-[629px] object-cover rounded-[40px]" />
+    <!-- Badge -->
+
+    <div class="absolute inset-0 flex flex-col items-center justify-end pb-20 text-center text-white px-6">
+      <span class="font-platypi text-[24px] md:text-[33px] mb-2 fw-300 leading-[38px]">
+        Next Project</span>
+      <h1 class="font-gotham font-normal text-[40px] md:text-[54px] leading-[66px] tracking-[-2%]">
+        Menier
+      </h1>
+    </div>
+  </div>
 
   <!-- Partners section start -->
   <div id="workplaces-scroll-section" class=" h-[341px] mt-12 overflow-hidden ">
@@ -324,6 +307,7 @@
     </div>
   </div>
   <!-- Partners section end  -->
+
 
   <!-- Footer start -->
   <footer class="bg-[#4E4F50] text-white pt-24 pb-20 font-sans">
@@ -425,7 +409,6 @@
   <!-- Footer end  -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script src="/script.js"></script>
 </body>
 

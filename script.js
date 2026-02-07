@@ -136,7 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".projectGallerySwiper")) {
     new Swiper(".projectGallerySwiper", {
       slidesPerView: 1.2,
-      spaceBetween: 20,
+      spaceBetween: 15,
+      centeredSlides: true,
       loop: true,
       speed: 1000,
       autoplay: {
@@ -145,11 +146,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       breakpoints: {
         640: {
-          slidesPerView: 2.2,
+          slidesPerView: 1.8,
           spaceBetween: 20,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 2.8,
           spaceBetween: 30,
         },
       },
