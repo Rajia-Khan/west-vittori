@@ -11,6 +11,23 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4cc0cd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4cc0cd;
+}
+
 /* ================================
    GLOBAL COLOR TOKENS
 ================================ */
