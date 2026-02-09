@@ -183,15 +183,8 @@ body {
 }
 
 .peopleSwiper .swiper-slide {
-  width: 280px;
-  height: 380px;
-}
-
-@media (min-width: 768px) {
-  .peopleSwiper .swiper-slide {
-    width: 360px;
-    height: 486px;
-  }
+  width: 360px;
+  height: 486px;
 }
 
 .peopleSwiper .swiper-slide img {

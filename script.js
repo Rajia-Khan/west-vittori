@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".peopleSwiper")) {
     new Swiper(".peopleSwiper", {
       slidesPerView: "auto",
-      spaceBetween: 24,
+      spaceBetween: 20, // gap-5
       loop: true,
       autoplay: {
         delay: 3500,
@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
         clickable: true,
       },
       breakpoints: {
-        320: { slidesPerView: 1.2, spaceBetween: 20 },
-        768: { slidesPerView: 2.2, spaceBetween: 24 },
-        1024: { slidesPerView: 4, spaceBetween: 30 },
+        320: { spaceBetween: 20 },
+        768: { spaceBetween: 20 },
+        1024: { spaceBetween: 20 },
       },
     });
   }
